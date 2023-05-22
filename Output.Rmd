@@ -66,6 +66,6 @@ leaflet(data = global_stats) %>%
     radius = 500,
     color = ~pal(global_stats$`sum(Confirmed_Cases)`),
     fillOpacity = .5)
-  
+```
   
   
