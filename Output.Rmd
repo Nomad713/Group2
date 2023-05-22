@@ -1,0 +1,71 @@
+---
+title: "Group Project 2"
+author: "Ian"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(readr)
+#read in data
+confirmed_global <- read.csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv")
+
+confirmed_us <- read.csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv")
+
+deaths_global <- read.csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv")
+
+deaths_us <- read.csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv")
+```
+Objective 1 - Global Map
+Data Wrangling
+```{r}
+library(dplyr)
+
+#change column name of last cumulative column to "Confirmed_Cases"
+colnames(confirmed_global)[ncol(confirmed_global)] = "Confirmed_Cases"
+#group table by country and calculate average lat and long for countries and sum of confirmed cases
+grouped_confirmed <- confirmed_global %>% 
+  select(1:4, ncol(confirmed_global)) %>% 
+      group_by(Country.Region) %>%
+          summarize(mean_lat=mean(Lat),
+                    mean_long=mean(Long),
+                    sum(Confirmed_Cases))
+#change column name of last cumulative column to "Deaths"
+colnames(deaths_global)[ncol(deaths_global)] = "Deaths"
+#group table by country and calculate average lat and long for countries and sum of deaths
+grouped_deaths <- deaths_global %>%
+  select(1:4, ncol(deaths_global)) %>%
+    group_by(Country.Region) %>%
+      summarize(mean_lat=mean(Lat),
+                mean_long=mean(Long),
+                sum(Deaths))
+#join the 2 data frames and remove the duplicate lat and long columns
+global_stats <- merge(x=grouped_confirmed, y=grouped_deaths, by="Country.Region") %>% select(-5, -6)
+
+```
+Map Making
+```{r}
+library("leaflet")
+global_stats$`sum(Confirmed_Cases)` = as.factor(global_stats$`sum(Confirmed_Cases)`)
+pal <- colorFactor("RdYlGn", global_stats$`sum(Confirmed_Cases)`, reverse = TRUE)
+
+
+leaflet(data = global_stats) %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  setView(lng = -100, lat = 40, zoom = 5) %>%
+  addCircles(
+    lat = ~mean_lat.x,
+    lng = ~mean_long.x,
+    popup = paste("Country:", global_stats$Country.Region, "<br>",
+                  "Confirmed Cases: ", global_stats$`sum(Confirmed_Cases)`, "<br>",
+                  "Deaths:" , global_stats$`sum(Deaths)`),
+    radius = 500,
+    color = ~pal(global_stats$`sum(Confirmed_Cases)`),
+    fillOpacity = .5)
+  
+  
+  
