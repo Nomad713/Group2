@@ -67,5 +67,48 @@ leaflet(data = global_stats) %>%
     color = ~pal(global_stats$`sum(Confirmed_Cases)`),
     fillOpacity = .5)
 ```
+
+
+
+
+## Objective 4 - Digging Deeper
+data wrangling
+```{r}
+library(dplyr)
+#Change column names to be more readable
+colnames(deaths_us)[6] = "City"
+colnames(deaths_us)[ncol(deaths_us)] = "Deaths"
+colnames(confirmed_us)[6] = "City"
+colnames(confirmed_us)[ncol(confirmed_us)] = "Confirmed"
+
+#selecting the parts of the data frames we want to join later
+usdeaths <- select(deaths_us, 1, 6:7, 12, ncol(deaths_us))
+usconfirmed <- select(confirmed_us, 1, 6:7, ncol(confirmed_us))
+
+#Create log transformations
+deaths_log <- log(usdeaths$Deaths)
+confirmed_log <- log(usconfirmed$Confirmed)
+population_log <- log(usdeaths$Population)
+
+#add transformations to data frames
+usdeaths$Deaths_log = deaths_log
+usdeaths$Population_log = population_log
+usconfirmed$Confirmed_log = confirmed_log
+
+#join data frames into one to work with when creating visualization
+us_stats <- merge(x=usdeaths, y=usconfirmed, by="UID") %>% select(-8, -9)
+filter(us_stats, City.x != "")
+
+
+
+
+
+
+
+
+
+
+
+```
   
   
