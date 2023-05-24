@@ -51,15 +51,17 @@ Map Making
 ```{r}
 library("leaflet")
 global_stats$`sum(Confirmed_Cases)` = as.factor(global_stats$`sum(Confirmed_Cases)`)
+#create pallette for map
 pal <- colorFactor("RdYlGn", global_stats$`sum(Confirmed_Cases)`, reverse = TRUE)
 
-
+#create map getting tiles from CartoDB.Positron, centered on United States
 leaflet(data = global_stats) %>%
   addProviderTiles("CartoDB.Positron") %>%
   setView(lng = -100, lat = 40, zoom = 5) %>%
   addCircles(
     lat = ~mean_lat.x,
     lng = ~mean_long.x,
+    #create pop ups for points on map
     popup = paste("Country:", global_stats$Country.Region, "<br>",
                   "Confirmed Cases: ", global_stats$`sum(Confirmed_Cases)`, "<br>",
                   "Deaths:" , global_stats$`sum(Deaths)`),
@@ -97,16 +99,26 @@ usconfirmed$Confirmed_log = confirmed_log
 
 #join data frames into one to work with when creating visualization
 us_stats <- merge(x=usdeaths, y=usconfirmed, by="UID") %>% select(-8, -9)
-filter(us_stats, City.x != "")
 
 
+```
+Creating Plots
+```{r}
+library(ggplot2)
+library(cowplot)
+library(scales)
+#create plots for use with plot_grid
+#confirmed vs population plot
+confpop <- ggplot(us_stats, aes(x=Population, y=Confirmed)) +
+  geom_point()
+confpop <- confpop + scale_x_continuous(labels=label_comma(), trans = 'log10') + scale_y_continuous(labels=label_comma(), trans = 'log10')
+#deaths vs confirmed plot
+deathconf <- ggplot(us_stats, aes(x=Confirmed, y=Deaths)) +
+  geom_point()
+deathconf <- deathconf + scale_x_continuous(labels=label_comma(), trans = 'log10') + scale_y_continuous(labels=label_comma(), trans = 'log10')
 
-
-
-
-
-
-
+#joining the plots into one graphic
+plot_grid(confpop, deathconf, labels = c("Confirmations Vs. Population","Deaths Vs. Confirmations"), align="h", hjust=-.3, vjust=.9)
 
 
 ```
