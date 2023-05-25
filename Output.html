@@ -9,7 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Ian" />
+<meta name="author" content="Ian and Queen" />
 
 <meta name="date" content="2023-05-24" />
 
@@ -5127,6 +5127,230 @@ function asArray(value) {
   this.layerManager.addLayer(L.tileLayer.provider(provider, options), "tile", layerId, group);
 };
 </script>
+<script>$(document).ready(function(){
+    if (typeof $('[data-toggle="tooltip"]').tooltip === 'function') {
+        $('[data-toggle="tooltip"]').tooltip();
+    }
+    if ($('[data-toggle="popover"]').popover === 'function') {
+        $('[data-toggle="popover"]').popover();
+    }
+});
+</script>
+<style type="text/css">
+.lightable-minimal {
+border-collapse: separate;
+border-spacing: 16px 1px;
+width: 100%;
+margin-bottom: 10px;
+}
+.lightable-minimal td {
+margin-left: 5px;
+margin-right: 5px;
+}
+.lightable-minimal th {
+margin-left: 5px;
+margin-right: 5px;
+}
+.lightable-minimal thead tr:last-child th {
+border-bottom: 2px solid #00000050;
+empty-cells: hide;
+}
+.lightable-minimal tbody tr:first-child td {
+padding-top: 0.5em;
+}
+.lightable-minimal.lightable-hover tbody tr:hover {
+background-color: #f5f5f5;
+}
+.lightable-minimal.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-classic {
+border-top: 0.16em solid #111111;
+border-bottom: 0.16em solid #111111;
+width: 100%;
+margin-bottom: 10px;
+margin: 10px 5px;
+}
+.lightable-classic tfoot tr td {
+border: 0;
+}
+.lightable-classic tfoot tr:first-child td {
+border-top: 0.14em solid #111111;
+}
+.lightable-classic caption {
+color: #222222;
+}
+.lightable-classic td {
+padding-left: 5px;
+padding-right: 5px;
+color: #222222;
+}
+.lightable-classic th {
+padding-left: 5px;
+padding-right: 5px;
+font-weight: normal;
+color: #222222;
+}
+.lightable-classic thead tr:last-child th {
+border-bottom: 0.10em solid #111111;
+}
+.lightable-classic.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-classic.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-classic-2 {
+border-top: 3px double #111111;
+border-bottom: 3px double #111111;
+width: 100%;
+margin-bottom: 10px;
+}
+.lightable-classic-2 tfoot tr td {
+border: 0;
+}
+.lightable-classic-2 tfoot tr:first-child td {
+border-top: 3px double #111111;
+}
+.lightable-classic-2 caption {
+color: #222222;
+}
+.lightable-classic-2 td {
+padding-left: 5px;
+padding-right: 5px;
+color: #222222;
+}
+.lightable-classic-2 th {
+padding-left: 5px;
+padding-right: 5px;
+font-weight: normal;
+color: #222222;
+}
+.lightable-classic-2 tbody tr:last-child td {
+border-bottom: 3px double #111111;
+}
+.lightable-classic-2 thead tr:last-child th {
+border-bottom: 1px solid #111111;
+}
+.lightable-classic-2.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-classic-2.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-material {
+min-width: 100%;
+white-space: nowrap;
+table-layout: fixed;
+font-family: Roboto, sans-serif;
+border: 1px solid #EEE;
+border-collapse: collapse;
+margin-bottom: 10px;
+}
+.lightable-material tfoot tr td {
+border: 0;
+}
+.lightable-material tfoot tr:first-child td {
+border-top: 1px solid #EEE;
+}
+.lightable-material th {
+height: 56px;
+padding-left: 16px;
+padding-right: 16px;
+}
+.lightable-material td {
+height: 52px;
+padding-left: 16px;
+padding-right: 16px;
+border-top: 1px solid #eeeeee;
+}
+.lightable-material.lightable-hover tbody tr:hover {
+background-color: #f5f5f5;
+}
+.lightable-material.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-material.lightable-striped tbody td {
+border: 0;
+}
+.lightable-material.lightable-striped thead tr:last-child th {
+border-bottom: 1px solid #ddd;
+}
+.lightable-material-dark {
+min-width: 100%;
+white-space: nowrap;
+table-layout: fixed;
+font-family: Roboto, sans-serif;
+border: 1px solid #FFFFFF12;
+border-collapse: collapse;
+margin-bottom: 10px;
+background-color: #363640;
+}
+.lightable-material-dark tfoot tr td {
+border: 0;
+}
+.lightable-material-dark tfoot tr:first-child td {
+border-top: 1px solid #FFFFFF12;
+}
+.lightable-material-dark th {
+height: 56px;
+padding-left: 16px;
+padding-right: 16px;
+color: #FFFFFF60;
+}
+.lightable-material-dark td {
+height: 52px;
+padding-left: 16px;
+padding-right: 16px;
+color: #FFFFFF;
+border-top: 1px solid #FFFFFF12;
+}
+.lightable-material-dark.lightable-hover tbody tr:hover {
+background-color: #FFFFFF12;
+}
+.lightable-material-dark.lightable-striped tbody tr:nth-child(even) {
+background-color: #FFFFFF12;
+}
+.lightable-material-dark.lightable-striped tbody td {
+border: 0;
+}
+.lightable-material-dark.lightable-striped thead tr:last-child th {
+border-bottom: 1px solid #FFFFFF12;
+}
+.lightable-paper {
+width: 100%;
+margin-bottom: 10px;
+color: #444;
+}
+.lightable-paper tfoot tr td {
+border: 0;
+}
+.lightable-paper tfoot tr:first-child td {
+border-top: 1px solid #00000020;
+}
+.lightable-paper thead tr:last-child th {
+color: #666;
+vertical-align: bottom;
+border-bottom: 1px solid #00000020;
+line-height: 1.15em;
+padding: 10px 5px;
+}
+.lightable-paper td {
+vertical-align: middle;
+border-bottom: 1px solid #00000010;
+line-height: 1.15em;
+padding: 7px 5px;
+}
+.lightable-paper.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-paper.lightable-striped tbody tr:nth-child(even) {
+background-color: #00000008;
+}
+.lightable-paper.lightable-striped tbody td {
+border: 0;
+}
+</style>
 
 <style type="text/css">
 code{white-space: pre-wrap;}
@@ -5250,7 +5474,7 @@ display: none;
 
 
 <h1 class="title toc-ignore">Group Project 2</h1>
-<h4 class="author">Ian</h4>
+<h4 class="author">Ian and Queen</h4>
 <h4 class="date">2023-05-24</h4>
 
 </div>
@@ -5258,15 +5482,15 @@ display: none;
 
 <pre class="r"><code>library(readr)</code></pre>
 <pre><code>## Warning: package &#39;readr&#39; was built under R version 4.2.3</code></pre>
-<pre class="r"><code>#read in data
-confirmed_global &lt;- read.csv(&quot;https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv&quot;)
-
-confirmed_us &lt;- read.csv(&quot;https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv&quot;)
-
-deaths_global &lt;- read.csv(&quot;https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv&quot;)
-
-deaths_us &lt;- read.csv(&quot;https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv&quot;)</code></pre>
-<p>Objective 1 - Global Map Data Wrangling</p>
+<pre class="r"><code>library(ggplot2)</code></pre>
+<pre><code>## Warning: package &#39;ggplot2&#39; was built under R version 4.2.3</code></pre>
+<pre class="r"><code>library(scales)</code></pre>
+<pre><code>## Warning: package &#39;scales&#39; was built under R version 4.2.3</code></pre>
+<pre><code>## 
+## Attaching package: &#39;scales&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:readr&#39;:
+## 
+##     col_factor</code></pre>
 <pre class="r"><code>library(dplyr)</code></pre>
 <pre><code>## Warning: package &#39;dplyr&#39; was built under R version 4.2.3</code></pre>
 <pre><code>## 
@@ -5277,6 +5501,30 @@ deaths_us &lt;- read.csv(&quot;https://raw.githubusercontent.com/CSSEGISandData/
 <pre><code>## The following objects are masked from &#39;package:base&#39;:
 ## 
 ##     intersect, setdiff, setequal, union</code></pre>
+<pre class="r"><code>library(tidyr)</code></pre>
+<pre><code>## Warning: package &#39;tidyr&#39; was built under R version 4.2.3</code></pre>
+<pre class="r"><code>library(readr)
+library(leaflet)</code></pre>
+<pre><code>## Warning: package &#39;leaflet&#39; was built under R version 4.2.3</code></pre>
+<pre class="r"><code>library(knitr)
+library(kableExtra)</code></pre>
+<pre><code>## Warning: package &#39;kableExtra&#39; was built under R version 4.2.3</code></pre>
+<pre><code>## 
+## Attaching package: &#39;kableExtra&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:dplyr&#39;:
+## 
+##     group_rows</code></pre>
+<pre class="r"><code>#read in data
+confirmed_global &lt;- read.csv(&quot;https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv&quot;)
+
+confirmed_us &lt;- read.csv(&quot;https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv&quot;)
+
+deaths_global &lt;- read.csv(&quot;https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv&quot;)
+
+deaths_us &lt;- read.csv(&quot;https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv&quot;)</code></pre>
+<div id="objective-1---global-map" class="section level1">
+<h1>Objective 1 - Global Map</h1>
+<p>Data Wrangling</p>
 <pre class="r"><code>#change column name of last cumulative column to &quot;Confirmed_Cases&quot;
 colnames(confirmed_global)[ncol(confirmed_global)] = &quot;Confirmed_Cases&quot;
 #group table by country and calculate average lat and long for countries and sum of confirmed cases
@@ -5298,18 +5546,18 @@ grouped_deaths &lt;- deaths_global %&gt;%
 #join the 2 data frames and remove the duplicate lat and long columns
 global_stats &lt;- merge(x=grouped_confirmed, y=grouped_deaths, by=&quot;Country.Region&quot;) %&gt;% select(-5, -6)</code></pre>
 <p>Map Making</p>
-<pre class="r"><code>library(&quot;leaflet&quot;)</code></pre>
-<pre><code>## Warning: package &#39;leaflet&#39; was built under R version 4.2.3</code></pre>
 <pre class="r"><code>global_stats$`sum(Confirmed_Cases)` = as.factor(global_stats$`sum(Confirmed_Cases)`)
+#create pallette for map
 pal &lt;- colorFactor(&quot;RdYlGn&quot;, global_stats$`sum(Confirmed_Cases)`, reverse = TRUE)
 
-
+#create map getting tiles from CartoDB.Positron, centered on United States
 leaflet(data = global_stats) %&gt;%
   addProviderTiles(&quot;CartoDB.Positron&quot;) %&gt;%
   setView(lng = -100, lat = 40, zoom = 5) %&gt;%
   addCircles(
     lat = ~mean_lat.x,
     lng = ~mean_long.x,
+    #create pop ups for points on map
     popup = paste(&quot;Country:&quot;, global_stats$Country.Region, &quot;&lt;br&gt;&quot;,
                   &quot;Confirmed Cases: &quot;, global_stats$`sum(Confirmed_Cases)`, &quot;&lt;br&gt;&quot;,
                   &quot;Deaths:&quot; , global_stats$`sum(Deaths)`),
@@ -5323,13 +5571,3540 @@ leaflet(data = global_stats) %&gt;%
 
 ## Warning in RColorBrewer::brewer.pal(max(3, n), palette): n too large, allowed maximum for palette RdYlGn is 11
 ## Returning the palette you asked for with that many colors</code></pre>
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-2d6dfc3643104eafd03a" style="width:672px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-2d6dfc3643104eafd03a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["CartoDB.Positron",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addCircles","args":[[33.93911,41.1533,28.0339,42.5063,-11.2027,-71.9499,17.0608,-38.4161,40.0691,-32.106275,47.5162,40.1431,25.025885,26.0275,23.685,13.1939,53.7098,50.8333,17.1899,9.3077,27.5142,-16.2902,43.9159,-22.3285,-14.235,4.5353,42.7339,12.2383,21.9162,-3.3731,16.5388,11.55,3.848,null,6.6111,15.4542,-35.6751,null,4.5709,-11.6455,-0.228,-4.0383,9.7489,7.54,45.1,21.521757,35.1264,49.8175,63.2878,0,11.8251,15.415,18.7357,-1.8312,26.820553,13.7942,1.6508,15.1794,58.5953,-26.5225,9.145,-17.7134,61.92411,6.42529958333333,-0.8037,13.4432,42.3154,51.165691,7.9465,39.0742,12.1165,15.7835,9.9456,11.8037,4.860416,18.9712,41.9029,15.2,47.1625,64.9631,20.593684,-0.7893,32.427908,33.223191,53.1424,31.046051,41.87194,18.1096,36.204824,31.24,48.0196,-0.0236,-3.3704,40.3399,35.907757,42.602636,29.31166,41.20438,19.85627,56.8796,33.8547,-29.61,6.428055,26.3351,47.14,55.1694,49.8153,-18.766947,-13.2543,4.210484,3.2028,17.570692,35.9375,7.1315,21.0079,-20.348404,23.6345,7.4256,47.4116,43.7333,46.8625,42.708678,31.7917,-18.665695,0,-22.9576,-0.5228,28.1667,21.40884,-27.0639,12.865416,17.607789,9.082,41.6086,60.472,21.512583,30.3753,7.515,8.538,-6.314993,-23.4425,-9.19,12.879721,51.9194,39.3999,25.3548,45.9432,61.52401,-1.9403,17.357822,13.9094,12.9843,-13.759,43.9424,0.1864,23.885942,14.4974,44.0165,-4.6796,8.460555,1.2833,48.669,46.1512,-9.6457,5.152149,-30.5595,6.877,40.463667,7.873054,12.8628,35.6491,3.9193,60.128161,46.8182,34.802075,23.7,38.861,-6.369028,15.870032,-8.874217,8.6195,-21.179,10.6918,33.886917,38.9637,-7.1095,1.373333,48.3794,23.424076,22.4245596,-32.5228,40,41.377491,-15.3767,6.4238,14.058324,31.9522,39.9042,15.552727,-13.133897,-19.015438],[67.709953,20.1683,1.6596,1.5218,17.8739,23.347,-61.7964,-63.6167,45.0382,141.3554875,14.5501,47.5769,-78.035889,50.55,90.3563,-59.5432,27.9534,4.469936,-88.4976,2.3158,90.4336,-63.5887,17.6791,24.6849,-51.9253,114.7277,25.4858,-1.5616,95.956,29.9189,-23.0418,104.9167,11.5021,null,20.9394,18.7322,-71.543,null,-74.2973,43.3333,15.8277,21.7587,-83.7534,-5.5471,15.2,-77.781167,33.4299,15.473,-13.3381,0,42.5903,-61.371,-70.1627,-78.1834,30.802498,-88.8965,10.2679,39.7823,25.0136,31.4659,40.4897,178.065,25.748151,-9.8396345,11.6094,-15.3101,43.3569,10.451526,-1.0232,21.8243,-61.679,-90.2308,-9.6966,-15.1804,-58.93018,-72.2852,12.4534,-86.2419,19.5033,-19.0208,78.96288,113.9213,53.688046,43.679291,-7.6921,34.851612,12.56738,-77.2975,138.252924,36.51,66.9237,37.9062,-168.734,127.5101,127.766922,20.902977,47.481766,74.766098,102.495496,24.6032,35.8623,28.2336,-9.429499,17.228331,9.55,23.8813,6.1296,46.869107,34.3015,101.975766,73.2207,-3.996166,14.3754,171.1845,-10.9408,57.552152,-102.5528,150.5508,28.3699,7.4167,103.8467,19.37439,-7.0926,35.529562,0,18.4904,166.9315,84.25,-52.99206,-51.5863,-85.207229,8.081666,8.6753,21.7453,8.4689,55.923255,69.3451,134.5825,-80.7821,143.95555,-58.4438,-75.0152,121.774017,19.1451,-8.2245,51.1839,24.9668,105.318756,29.8739,-62.782998,-60.9789,-61.2872,-172.1046,12.4578,6.6131,45.079162,-14.4524,21.0059,55.492,-11.779889,103.8333,19.699,14.9955,160.1562,46.199616,22.9375,31.307,-3.74922,80.771797,30.2176,139.7737,-56.0278,18.643501,8.2275,38.996815,121,71.2761,34.888822,100.992541,125.727539,0.8248,-175.1982,-61.2225,9.537499,35.2433,177.6493,32.290275,31.1656,53.847818,-42.0220037333333,-55.7658,-100,64.585262,166.9592,-66.5897,108.277199,35.2332,116.4074,48.516388,27.849332,29.154857],500,null,null,{"interactive":true,"className":"","stroke":true,"color":["#EAF6A2","#FFFCBA","#F6FBB2","#97D268","#CAE881","#026D39","#18934D","#C82527","#FFF3AA","#C52327","#DA382A","#FED480","#87CB67","#FED985","#F8854D","#CCEA83","#FECC7A","#E65135","#B5E074","#77C465","#A6D96A","#FEB667","#FFF4AD","#FFFDBC","#AF0D26","#F9FDB7","#FCA55C","#60B961","#FEE593","#A0D669","#A9DA6C","#D6EE89","#D1EC86","#EA5A39","#33A155","#118747","#E0452F","#E34B32","#D83428","#16914C","#70C164","#C7E77F","#FDB365","#C0E47A","#FDAB5F","#FEBB6B","#FEE390","#E95737","#F16840","#06743D","#3FA758","#42A958","#FEE28E","#FEBD6D","#FFEB9D","#E5F49B","#50B05C","#209A51","#FFE695","#BBE277","#FFEEA2","#B3DF72","#FB9B58","#AA0726","#9AD369","#2F9F54","#F8884F","#AC0A26","#DFF193","#DE422E","#5AB65F","#FDAE61","#8ACC67","#158E4B","#B8E176","#81C866","#036F3B","#FFF1A8","#F7824C","#E8F5A0","#A70326","#D42E27","#CF2A27","#F67747","#F98F52","#E44E33","#B61627","#D9EF8B","#B11027","#F98B50","#FA9555","#FFFAB7","#0A7B41","#006837","#B41327","#F8FCB5","#FEE08B","#E6F59D","#ECF7A5","#FECF7C","#FDB163","#84CA66","#148C4A","#FFECA0","#5DB760","#FCA25B","#FFFFBF","#B0DD71","#C2E57C","#E14830","#E1F295","#7EC765","#CFEB84","#37A356","#ABDB6D","#FDFEBC","#D22C27","#6ABE63","#FFE898","#46AA59","#FEC776","#FBFDBA","#FCA85E","#EEF8A8","#016A38","#DDF190","#0B7D42","#FECA78","#CD2927","#F67B49","#3BA557","#19964F","#F4FAAF","#FFF7B2","#FB9856","#FFF6AF","#FA9253","#0D8043","#FEC574","#94D168","#FED682","#EC5D3A","#EE623D","#D73027","#DD3E2C","#FFEFA5","#F36A42","#BB1A27","#D4ED88","#108446","#7AC565","#1A9850","#49AC5A","#66BD63","#0E8245","#FED17E","#C5E67E","#F57446","#9DD569","#128948","#F77E4A","#F57144","#FB9F59","#6DC064","#74C364","#F0653F","#57B45E","#C01F27","#FEDE89","#AEDC6F","#07763E","#BDE379","#F46D43","#ED5F3C","#A3D86A","#CA2727","#53B25D","#91CF68","#E75436","#63BB62","#8DCE67","#4DAE5B","#E3F398","#FEB869","#BE1D27","#087840","#DBF08E","#DB3B2B","#FEC070","#B91827","#FEC272","#A50026","#F0F9AA","#2A9D53","#FFE99B","#C32127","#FEDB87","#04713C","#269C52","#FFF9B5","#F2F9AD"],"weight":5,"opacity":0.5,"fill":true,"fillColor":["#EAF6A2","#FFFCBA","#F6FBB2","#97D268","#CAE881","#026D39","#18934D","#C82527","#FFF3AA","#C52327","#DA382A","#FED480","#87CB67","#FED985","#F8854D","#CCEA83","#FECC7A","#E65135","#B5E074","#77C465","#A6D96A","#FEB667","#FFF4AD","#FFFDBC","#AF0D26","#F9FDB7","#FCA55C","#60B961","#FEE593","#A0D669","#A9DA6C","#D6EE89","#D1EC86","#EA5A39","#33A155","#118747","#E0452F","#E34B32","#D83428","#16914C","#70C164","#C7E77F","#FDB365","#C0E47A","#FDAB5F","#FEBB6B","#FEE390","#E95737","#F16840","#06743D","#3FA758","#42A958","#FEE28E","#FEBD6D","#FFEB9D","#E5F49B","#50B05C","#209A51","#FFE695","#BBE277","#FFEEA2","#B3DF72","#FB9B58","#AA0726","#9AD369","#2F9F54","#F8884F","#AC0A26","#DFF193","#DE422E","#5AB65F","#FDAE61","#8ACC67","#158E4B","#B8E176","#81C866","#036F3B","#FFF1A8","#F7824C","#E8F5A0","#A70326","#D42E27","#CF2A27","#F67747","#F98F52","#E44E33","#B61627","#D9EF8B","#B11027","#F98B50","#FA9555","#FFFAB7","#0A7B41","#006837","#B41327","#F8FCB5","#FEE08B","#E6F59D","#ECF7A5","#FECF7C","#FDB163","#84CA66","#148C4A","#FFECA0","#5DB760","#FCA25B","#FFFFBF","#B0DD71","#C2E57C","#E14830","#E1F295","#7EC765","#CFEB84","#37A356","#ABDB6D","#FDFEBC","#D22C27","#6ABE63","#FFE898","#46AA59","#FEC776","#FBFDBA","#FCA85E","#EEF8A8","#016A38","#DDF190","#0B7D42","#FECA78","#CD2927","#F67B49","#3BA557","#19964F","#F4FAAF","#FFF7B2","#FB9856","#FFF6AF","#FA9253","#0D8043","#FEC574","#94D168","#FED682","#EC5D3A","#EE623D","#D73027","#DD3E2C","#FFEFA5","#F36A42","#BB1A27","#D4ED88","#108446","#7AC565","#1A9850","#49AC5A","#66BD63","#0E8245","#FED17E","#C5E67E","#F57446","#9DD569","#128948","#F77E4A","#F57144","#FB9F59","#6DC064","#74C364","#F0653F","#57B45E","#C01F27","#FEDE89","#AEDC6F","#07763E","#BDE379","#F46D43","#ED5F3C","#A3D86A","#CA2727","#53B25D","#91CF68","#E75436","#63BB62","#8DCE67","#4DAE5B","#E3F398","#FEB869","#BE1D27","#087840","#DBF08E","#DB3B2B","#FEC070","#B91827","#FEC272","#A50026","#F0F9AA","#2A9D53","#FFE99B","#C32127","#FEDB87","#04713C","#269C52","#FFF9B5","#F2F9AD"],"fillOpacity":0.5},["Country: Afghanistan <br> Confirmed Cases:  209451 <br> Deaths: 7896","Country: Albania <br> Confirmed Cases:  334457 <br> Deaths: 3598","Country: Algeria <br> Confirmed Cases:  271496 <br> Deaths: 6881","Country: Andorra <br> Confirmed Cases:  47890 <br> Deaths: 165","Country: Angola <br> Confirmed Cases:  105288 <br> Deaths: 1933","Country: Antarctica <br> Confirmed Cases:  11 <br> Deaths: 0","Country: Antigua and Barbuda <br> Confirmed Cases:  9106 <br> Deaths: 146","Country: Argentina <br> Confirmed Cases:  10044957 <br> Deaths: 130472","Country: Armenia <br> Confirmed Cases:  447308 <br> Deaths: 8727","Country: Australia <br> Confirmed Cases:  11399460 <br> Deaths: 19574","Country: Austria <br> Confirmed Cases:  5961143 <br> Deaths: 21970","Country: Azerbaijan <br> Confirmed Cases:  828825 <br> Deaths: 10138","Country: Bahamas <br> Confirmed Cases:  37491 <br> Deaths: 833","Country: Bahrain <br> Confirmed Cases:  710693 <br> Deaths: 1553","Country: Bangladesh <br> Confirmed Cases:  2037871 <br> Deaths: 29445","Country: Barbados <br> Confirmed Cases:  106798 <br> Deaths: 579","Country: Belarus <br> Confirmed Cases:  994037 <br> Deaths: 7118","Country: Belgium <br> Confirmed Cases:  4739365 <br> Deaths: 33814","Country: Belize <br> Confirmed Cases:  70757 <br> Deaths: 688","Country: Benin <br> Confirmed Cases:  27999 <br> Deaths: 163","Country: Bhutan <br> Confirmed Cases:  62627 <br> Deaths: 21","Country: Bolivia <br> Confirmed Cases:  1194277 <br> Deaths: 22365","Country: Bosnia and Herzegovina <br> Confirmed Cases:  401729 <br> Deaths: 16280","Country: Botswana <br> Confirmed Cases:  329758 <br> Deaths: 2801","Country: Brazil <br> Confirmed Cases:  37076053 <br> Deaths: 699276","Country: Brunei <br> Confirmed Cases:  279661 <br> Deaths: 225","Country: Bulgaria <br> Confirmed Cases:  1297523 <br> Deaths: 38228","Country: Burkina Faso <br> Confirmed Cases:  22056 <br> Deaths: 396","Country: Burma <br> Confirmed Cases:  633950 <br> Deaths: 19490","Country: Burundi <br> Confirmed Cases:  53631 <br> Deaths: 38","Country: Cabo Verde <br> Confirmed Cases:  63244 <br> Deaths: 413","Country: Cambodia <br> Confirmed Cases:  138719 <br> Deaths: 3056","Country: Cameroon <br> Confirmed Cases:  124392 <br> Deaths: 1965","Country: Canada <br> Confirmed Cases:  4617095 <br> Deaths: 51720","Country: Central African Republic <br> Confirmed Cases:  15368 <br> Deaths: 113","Country: Chad <br> Confirmed Cases:  7679 <br> Deaths: 194","Country: Chile <br> Confirmed Cases:  5192286 <br> Deaths: 64273","Country: China <br> Confirmed Cases:  4903524 <br> Deaths: 101056","Country: Colombia <br> Confirmed Cases:  6359093 <br> Deaths: 142339","Country: Comoros <br> Confirmed Cases:  9008 <br> Deaths: 161","Country: Congo (Brazzaville) <br> Confirmed Cases:  25087 <br> Deaths: 388","Country: Congo (Kinshasa) <br> Confirmed Cases:  95749 <br> Deaths: 1464","Country: Costa Rica <br> Confirmed Cases:  1209725 <br> Deaths: 9245","Country: Cote d'Ivoire <br> Confirmed Cases:  88263 <br> Deaths: 834","Country: Croatia <br> Confirmed Cases:  1269326 <br> Deaths: 17987","Country: Cuba <br> Confirmed Cases:  1112643 <br> Deaths: 8530","Country: Cyprus <br> Confirmed Cases:  650685 <br> Deaths: 1330","Country: Czechia <br> Confirmed Cases:  4618256 <br> Deaths: 42491","Country: Denmark <br> Confirmed Cases:  3451036 <br> Deaths: 8345","Country: Diamond Princess <br> Confirmed Cases:  712 <br> Deaths: 13","Country: Djibouti <br> Confirmed Cases:  15690 <br> Deaths: 189","Country: Dominica <br> Confirmed Cases:  15760 <br> Deaths: 74","Country: Dominican Republic <br> Confirmed Cases:  660790 <br> Deaths: 4384","Country: Ecuador <br> Confirmed Cases:  1057121 <br> Deaths: 36014","Country: Egypt <br> Confirmed Cases:  515759 <br> Deaths: 24812","Country: El Salvador <br> Confirmed Cases:  201785 <br> Deaths: 4230","Country: Equatorial Guinea <br> Confirmed Cases:  17229 <br> Deaths: 183","Country: Eritrea <br> Confirmed Cases:  10189 <br> Deaths: 103","Country: Estonia <br> Confirmed Cases:  615433 <br> Deaths: 2946","Country: Eswatini <br> Confirmed Cases:  74267 <br> Deaths: 1425","Country: Ethiopia <br> Confirmed Cases:  500116 <br> Deaths: 7572","Country: Fiji <br> Confirmed Cases:  68898 <br> Deaths: 883","Country: Finland <br> Confirmed Cases:  1463644 <br> Deaths: 8967","Country: France <br> Confirmed Cases:  39866718 <br> Deaths: 166176","Country: Gabon <br> Confirmed Cases:  48981 <br> Deaths: 306","Country: Gambia <br> Confirmed Cases:  12598 <br> Deaths: 372","Country: Georgia <br> Confirmed Cases:  1827537 <br> Deaths: 16971","Country: Germany <br> Confirmed Cases:  38249060 <br> Deaths: 168935","Country: Ghana <br> Confirmed Cases:  171229 <br> Deaths: 1462","Country: Greece <br> Confirmed Cases:  5548487 <br> Deaths: 34779","Country: Grenada <br> Confirmed Cases:  19680 <br> Deaths: 238","Country: Guatemala <br> Confirmed Cases:  1238247 <br> Deaths: 20182","Country: Guinea <br> Confirmed Cases:  38267 <br> Deaths: 467","Country: Guinea-Bissau <br> Confirmed Cases:  8960 <br> Deaths: 176","Country: Guyana <br> Confirmed Cases:  73075 <br> Deaths: 1298","Country: Haiti <br> Confirmed Cases:  34202 <br> Deaths: 860","Country: Holy See <br> Confirmed Cases:  29 <br> Deaths: 0","Country: Honduras <br> Confirmed Cases:  472250 <br> Deaths: 11111","Country: Hungary <br> Confirmed Cases:  2196804 <br> Deaths: 48762","Country: Iceland <br> Confirmed Cases:  209137 <br> Deaths: 263","Country: India <br> Confirmed Cases:  44690738 <br> Deaths: 530779","Country: Indonesia <br> Confirmed Cases:  6738225 <br> Deaths: 160941","Country: Iran <br> Confirmed Cases:  7572311 <br> Deaths: 144933","Country: Iraq <br> Confirmed Cases:  2465545 <br> Deaths: 25375","Country: Ireland <br> Confirmed Cases:  1704502 <br> Deaths: 8708","Country: Israel <br> Confirmed Cases:  4803824 <br> Deaths: 12329","Country: Italy <br> Confirmed Cases:  25603510 <br> Deaths: 188322","Country: Jamaica <br> Confirmed Cases:  154416 <br> Deaths: 3514","Country: Japan <br> Confirmed Cases:  33320438 <br> Deaths: 72997","Country: Jordan <br> Confirmed Cases:  1746997 <br> Deaths: 14122","Country: Kazakhstan <br> Confirmed Cases:  1498668 <br> Deaths: 19071","Country: Kenya <br> Confirmed Cases:  342937 <br> Deaths: 5688","Country: Kiribati <br> Confirmed Cases:  5014 <br> Deaths: 18","Country: Korea, North <br> Confirmed Cases:  1 <br> Deaths: 6","Country: Korea, South <br> Confirmed Cases:  30615522 <br> Deaths: 34093","Country: Kosovo <br> Confirmed Cases:  273312 <br> Deaths: 3211","Country: Kuwait <br> Confirmed Cases:  663860 <br> Deaths: 2570","Country: Kyrgyzstan <br> Confirmed Cases:  206708 <br> Deaths: 2991","Country: Laos <br> Confirmed Cases:  218023 <br> Deaths: 758","Country: Latvia <br> Confirmed Cases:  976255 <br> Deaths: 6269","Country: Lebanon <br> Confirmed Cases:  1232828 <br> Deaths: 10841","Country: Lesotho <br> Confirmed Cases:  34790 <br> Deaths: 723","Country: Liberia <br> Confirmed Cases:  8090 <br> Deaths: 295","Country: Libya <br> Confirmed Cases:  507187 <br> Deaths: 6437","Country: Liechtenstein <br> Confirmed Cases:  21432 <br> Deaths: 89","Country: Lithuania <br> Confirmed Cases:  1307448 <br> Deaths: 9596","Country: Luxembourg <br> Confirmed Cases:  317367 <br> Deaths: 1220","Country: Madagascar <br> Confirmed Cases:  67889 <br> Deaths: 1423","Country: Malawi <br> Confirmed Cases:  88707 <br> Deaths: 2686","Country: Malaysia <br> Confirmed Cases:  5044718 <br> Deaths: 36967","Country: Maldives <br> Confirmed Cases:  185738 <br> Deaths: 311","Country: Mali <br> Confirmed Cases:  33062 <br> Deaths: 743","Country: Malta <br> Confirmed Cases:  117610 <br> Deaths: 828","Country: Marshall Islands <br> Confirmed Cases:  15649 <br> Deaths: 17","Country: Mauritania <br> Confirmed Cases:  63668 <br> Deaths: 997","Country: Mauritius <br> Confirmed Cases:  296042 <br> Deaths: 1044","Country: Mexico <br> Confirmed Cases:  7483444 <br> Deaths: 333188","Country: Micronesia <br> Confirmed Cases:  23948 <br> Deaths: 61","Country: Moldova <br> Confirmed Cases:  611140 <br> Deaths: 12003","Country: Monaco <br> Confirmed Cases:  16121 <br> Deaths: 67","Country: Mongolia <br> Confirmed Cases:  1007900 <br> Deaths: 2136","Country: Montenegro <br> Confirmed Cases:  288808 <br> Deaths: 2808","Country: Morocco <br> Confirmed Cases:  1272490 <br> Deaths: 16296","Country: Mozambique <br> Confirmed Cases:  233214 <br> Deaths: 2242","Country: MS Zaandam <br> Confirmed Cases:  9 <br> Deaths: 2","Country: Namibia <br> Confirmed Cases:  171156 <br> Deaths: 4090","Country: Nauru <br> Confirmed Cases:  5247 <br> Deaths: 1","Country: Nepal <br> Confirmed Cases:  1001154 <br> Deaths: 12020","Country: Netherlands <br> Confirmed Cases:  8712835 <br> Deaths: 23705","Country: New Zealand <br> Confirmed Cases:  2236114 <br> Deaths: 2550","Country: Nicaragua <br> Confirmed Cases:  15655 <br> Deaths: 245","Country: Niger <br> Confirmed Cases:  9508 <br> Deaths: 315","Country: Nigeria <br> Confirmed Cases:  266598 <br> Deaths: 3155","Country: North Macedonia <br> Confirmed Cases:  346852 <br> Deaths: 9662","Country: Norway <br> Confirmed Cases:  1479506 <br> Deaths: 5213","Country: Oman <br> Confirmed Cases:  399449 <br> Deaths: 4628","Country: Pakistan <br> Confirmed Cases:  1577411 <br> Deaths: 30644","Country: Palau <br> Confirmed Cases:  5991 <br> Deaths: 9","Country: Panama <br> Confirmed Cases:  1031731 <br> Deaths: 8609","Country: Papua New Guinea <br> Confirmed Cases:  46825 <br> Deaths: 670","Country: Paraguay <br> Confirmed Cases:  808401 <br> Deaths: 19878","Country: Peru <br> Confirmed Cases:  4487553 <br> Deaths: 219539","Country: Philippines <br> Confirmed Cases:  4077452 <br> Deaths: 66188","Country: Poland <br> Confirmed Cases:  6444960 <br> Deaths: 119010","Country: Portugal <br> Confirmed Cases:  5570473 <br> Deaths: 26266","Country: Qatar <br> Confirmed Cases:  495090 <br> Deaths: 688","Country: Romania <br> Confirmed Cases:  3346046 <br> Deaths: 67736","Country: Russia <br> Confirmed Cases:  22075858 <br> Deaths: 388478","Country: Rwanda <br> Confirmed Cases:  133194 <br> Deaths: 1468","Country: Saint Kitts and Nevis <br> Confirmed Cases:  6597 <br> Deaths: 47","Country: Saint Lucia <br> Confirmed Cases:  30004 <br> Deaths: 409","Country: Saint Vincent and the Grenadines <br> Confirmed Cases:  9589 <br> Deaths: 123","Country: Samoa <br> Confirmed Cases:  16607 <br> Deaths: 29","Country: San Marino <br> Confirmed Cases:  23616 <br> Deaths: 122","Country: Sao Tome and Principe <br> Confirmed Cases:  6281 <br> Deaths: 77","Country: Saudi Arabia <br> Confirmed Cases:  830127 <br> Deaths: 9618","Country: Senegal <br> Confirmed Cases:  88926 <br> Deaths: 1971","Country: Serbia <br> Confirmed Cases:  2500142 <br> Deaths: 17881","Country: Seychelles <br> Confirmed Cases:  50665 <br> Deaths: 172","Country: Sierra Leone <br> Confirmed Cases:  7760 <br> Deaths: 126","Country: Singapore <br> Confirmed Cases:  2235294 <br> Deaths: 1722","Country: Slovakia <br> Confirmed Cases:  2667551 <br> Deaths: 21035","Country: Slovenia <br> Confirmed Cases:  1331707 <br> Deaths: 7078","Country: Solomon Islands <br> Confirmed Cases:  24575 <br> Deaths: 153","Country: Somalia <br> Confirmed Cases:  27324 <br> Deaths: 1361","Country: South Africa <br> Confirmed Cases:  4067067 <br> Deaths: 102595","Country: South Sudan <br> Confirmed Cases:  18368 <br> Deaths: 138","Country: Spain <br> Confirmed Cases:  13770429 <br> Deaths: 119479","Country: Sri Lanka <br> Confirmed Cases:  672039 <br> Deaths: 16830","Country: Sudan <br> Confirmed Cases:  63829 <br> Deaths: 5017","Country: Summer Olympics 2020 <br> Confirmed Cases:  865 <br> Deaths: 0","Country: Suriname <br> Confirmed Cases:  82467 <br> Deaths: 1404","Country: Sweden <br> Confirmed Cases:  2699339 <br> Deaths: 23777","Country: Switzerland <br> Confirmed Cases:  4413911 <br> Deaths: 14210","Country: Syria <br> Confirmed Cases:  57467 <br> Deaths: 3164","Country: Taiwan* <br> Confirmed Cases:  9970937 <br> Deaths: 17672","Country: Tajikistan <br> Confirmed Cases:  17786 <br> Deaths: 125","Country: Tanzania <br> Confirmed Cases:  42906 <br> Deaths: 846","Country: Thailand <br> Confirmed Cases:  4728182 <br> Deaths: 33918","Country: Timor-Leste <br> Confirmed Cases:  23419 <br> Deaths: 138","Country: Togo <br> Confirmed Cases:  39396 <br> Deaths: 290","Country: Tonga <br> Confirmed Cases:  16810 <br> Deaths: 13","Country: Trinidad and Tobago <br> Confirmed Cases:  189918 <br> Deaths: 4355","Country: Tunisia <br> Confirmed Cases:  1151126 <br> Deaths: 29341","Country: Turkey <br> Confirmed Cases:  17042722 <br> Deaths: 101492","Country: Tuvalu <br> Confirmed Cases:  2805 <br> Deaths: 0","Country: Uganda <br> Confirmed Cases:  170544 <br> Deaths: 3630","Country: Ukraine <br> Confirmed Cases:  5711929 <br> Deaths: 119283","Country: United Arab Emirates <br> Confirmed Cases:  1053213 <br> Deaths: 2349","Country: United Kingdom <br> Confirmed Cases:  24658705 <br> Deaths: 220721","Country: Uruguay <br> Confirmed Cases:  1034303 <br> Deaths: 7617","Country: US <br> Confirmed Cases:  103802702 <br> Deaths: 1123836","Country: Uzbekistan <br> Confirmed Cases:  251247 <br> Deaths: 1637","Country: Vanuatu <br> Confirmed Cases:  12014 <br> Deaths: 14","Country: Venezuela <br> Confirmed Cases:  552162 <br> Deaths: 5854","Country: Vietnam <br> Confirmed Cases:  11526994 <br> Deaths: 43186","Country: West Bank and Gaza <br> Confirmed Cases:  703228 <br> Deaths: 5708","Country: Winter Olympics 2022 <br> Confirmed Cases:  535 <br> Deaths: 0","Country: Yemen <br> Confirmed Cases:  11945 <br> Deaths: 2159","Country: Zambia <br> Confirmed Cases:  343135 <br> Deaths: 4057","Country: Zimbabwe <br> Confirmed Cases:  264276 <br> Deaths: 5671"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null,null]}],"setView":[[40,-100],5,[]],"limits":{"lat":[-71.9499,64.9631],"lng":[-175.1982,178.065]}},"evals":[],"jsHooks":[]}</script>
-<div id="objective-4---digging-deeper" class="section level2">
-<h2>Objective 4 - Digging Deeper</h2>
-<p>data wrangling</p>
-<pre class="r"><code>library(dplyr)
-#Change column names to be more readable
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-b3866b73649acc811048" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-b3866b73649acc811048">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["CartoDB.Positron",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addCircles","args":[[33.93911,41.1533,28.0339,42.5063,-11.2027,-71.9499,17.0608,-38.4161,40.0691,-32.106275,47.5162,40.1431,25.025885,26.0275,23.685,13.1939,53.7098,50.8333,17.1899,9.3077,27.5142,-16.2902,43.9159,-22.3285,-14.235,4.5353,42.7339,12.2383,21.9162,-3.3731,16.5388,11.55,3.848,null,6.6111,15.4542,-35.6751,null,4.5709,-11.6455,-0.228,-4.0383,9.7489,7.54,45.1,21.521757,35.1264,49.8175,63.2878,0,11.8251,15.415,18.7357,-1.8312,26.820553,13.7942,1.6508,15.1794,58.5953,-26.5225,9.145,-17.7134,61.92411,6.42529958333333,-0.8037,13.4432,42.3154,51.165691,7.9465,39.0742,12.1165,15.7835,9.9456,11.8037,4.860416,18.9712,41.9029,15.2,47.1625,64.9631,20.593684,-0.7893,32.427908,33.223191,53.1424,31.046051,41.87194,18.1096,36.204824,31.24,48.0196,-0.0236,-3.3704,40.3399,35.907757,42.602636,29.31166,41.20438,19.85627,56.8796,33.8547,-29.61,6.428055,26.3351,47.14,55.1694,49.8153,-18.766947,-13.2543,4.210484,3.2028,17.570692,35.9375,7.1315,21.0079,-20.348404,23.6345,7.4256,47.4116,43.7333,46.8625,42.708678,31.7917,-18.665695,0,-22.9576,-0.5228,28.1667,21.40884,-27.0639,12.865416,17.607789,9.082,41.6086,60.472,21.512583,30.3753,7.515,8.538,-6.314993,-23.4425,-9.19,12.879721,51.9194,39.3999,25.3548,45.9432,61.52401,-1.9403,17.357822,13.9094,12.9843,-13.759,43.9424,0.1864,23.885942,14.4974,44.0165,-4.6796,8.460555,1.2833,48.669,46.1512,-9.6457,5.152149,-30.5595,6.877,40.463667,7.873054,12.8628,35.6491,3.9193,60.128161,46.8182,34.802075,23.7,38.861,-6.369028,15.870032,-8.874217,8.6195,-21.179,10.6918,33.886917,38.9637,-7.1095,1.373333,48.3794,23.424076,22.4245596,-32.5228,40,41.377491,-15.3767,6.4238,14.058324,31.9522,39.9042,15.552727,-13.133897,-19.015438],[67.709953,20.1683,1.6596,1.5218,17.8739,23.347,-61.7964,-63.6167,45.0382,141.3554875,14.5501,47.5769,-78.035889,50.55,90.3563,-59.5432,27.9534,4.469936,-88.4976,2.3158,90.4336,-63.5887,17.6791,24.6849,-51.9253,114.7277,25.4858,-1.5616,95.956,29.9189,-23.0418,104.9167,11.5021,null,20.9394,18.7322,-71.543,null,-74.2973,43.3333,15.8277,21.7587,-83.7534,-5.5471,15.2,-77.781167,33.4299,15.473,-13.3381,0,42.5903,-61.371,-70.1627,-78.1834,30.802498,-88.8965,10.2679,39.7823,25.0136,31.4659,40.4897,178.065,25.748151,-9.8396345,11.6094,-15.3101,43.3569,10.451526,-1.0232,21.8243,-61.679,-90.2308,-9.6966,-15.1804,-58.93018,-72.2852,12.4534,-86.2419,19.5033,-19.0208,78.96288,113.9213,53.688046,43.679291,-7.6921,34.851612,12.56738,-77.2975,138.252924,36.51,66.9237,37.9062,-168.734,127.5101,127.766922,20.902977,47.481766,74.766098,102.495496,24.6032,35.8623,28.2336,-9.429499,17.228331,9.55,23.8813,6.1296,46.869107,34.3015,101.975766,73.2207,-3.996166,14.3754,171.1845,-10.9408,57.552152,-102.5528,150.5508,28.3699,7.4167,103.8467,19.37439,-7.0926,35.529562,0,18.4904,166.9315,84.25,-52.99206,-51.5863,-85.207229,8.081666,8.6753,21.7453,8.4689,55.923255,69.3451,134.5825,-80.7821,143.95555,-58.4438,-75.0152,121.774017,19.1451,-8.2245,51.1839,24.9668,105.318756,29.8739,-62.782998,-60.9789,-61.2872,-172.1046,12.4578,6.6131,45.079162,-14.4524,21.0059,55.492,-11.779889,103.8333,19.699,14.9955,160.1562,46.199616,22.9375,31.307,-3.74922,80.771797,30.2176,139.7737,-56.0278,18.643501,8.2275,38.996815,121,71.2761,34.888822,100.992541,125.727539,0.8248,-175.1982,-61.2225,9.537499,35.2433,177.6493,32.290275,31.1656,53.847818,-42.0220037333333,-55.7658,-100,64.585262,166.9592,-66.5897,108.277199,35.2332,116.4074,48.516388,27.849332,29.154857],500,null,null,{"interactive":true,"className":"","stroke":true,"color":["#EAF6A2","#FFFCBA","#F6FBB2","#97D268","#CAE881","#026D39","#18934D","#C82527","#FFF3AA","#C52327","#DA382A","#FED480","#87CB67","#FED985","#F8854D","#CCEA83","#FECC7A","#E65135","#B5E074","#77C465","#A6D96A","#FEB667","#FFF4AD","#FFFDBC","#AF0D26","#F9FDB7","#FCA55C","#60B961","#FEE593","#A0D669","#A9DA6C","#D6EE89","#D1EC86","#EA5A39","#33A155","#118747","#E0452F","#E34B32","#D83428","#16914C","#70C164","#C7E77F","#FDB365","#C0E47A","#FDAB5F","#FEBB6B","#FEE390","#E95737","#F16840","#06743D","#3FA758","#42A958","#FEE28E","#FEBD6D","#FFEB9D","#E5F49B","#50B05C","#209A51","#FFE695","#BBE277","#FFEEA2","#B3DF72","#FB9B58","#AA0726","#9AD369","#2F9F54","#F8884F","#AC0A26","#DFF193","#DE422E","#5AB65F","#FDAE61","#8ACC67","#158E4B","#B8E176","#81C866","#036F3B","#FFF1A8","#F7824C","#E8F5A0","#A70326","#D42E27","#CF2A27","#F67747","#F98F52","#E44E33","#B61627","#D9EF8B","#B11027","#F98B50","#FA9555","#FFFAB7","#0A7B41","#006837","#B41327","#F8FCB5","#FEE08B","#E6F59D","#ECF7A5","#FECF7C","#FDB163","#84CA66","#148C4A","#FFECA0","#5DB760","#FCA25B","#FFFFBF","#B0DD71","#C2E57C","#E14830","#E1F295","#7EC765","#CFEB84","#37A356","#ABDB6D","#FDFEBC","#D22C27","#6ABE63","#FFE898","#46AA59","#FEC776","#FBFDBA","#FCA85E","#EEF8A8","#016A38","#DDF190","#0B7D42","#FECA78","#CD2927","#F67B49","#3BA557","#19964F","#F4FAAF","#FFF7B2","#FB9856","#FFF6AF","#FA9253","#0D8043","#FEC574","#94D168","#FED682","#EC5D3A","#EE623D","#D73027","#DD3E2C","#FFEFA5","#F36A42","#BB1A27","#D4ED88","#108446","#7AC565","#1A9850","#49AC5A","#66BD63","#0E8245","#FED17E","#C5E67E","#F57446","#9DD569","#128948","#F77E4A","#F57144","#FB9F59","#6DC064","#74C364","#F0653F","#57B45E","#C01F27","#FEDE89","#AEDC6F","#07763E","#BDE379","#F46D43","#ED5F3C","#A3D86A","#CA2727","#53B25D","#91CF68","#E75436","#63BB62","#8DCE67","#4DAE5B","#E3F398","#FEB869","#BE1D27","#087840","#DBF08E","#DB3B2B","#FEC070","#B91827","#FEC272","#A50026","#F0F9AA","#2A9D53","#FFE99B","#C32127","#FEDB87","#04713C","#269C52","#FFF9B5","#F2F9AD"],"weight":5,"opacity":0.5,"fill":true,"fillColor":["#EAF6A2","#FFFCBA","#F6FBB2","#97D268","#CAE881","#026D39","#18934D","#C82527","#FFF3AA","#C52327","#DA382A","#FED480","#87CB67","#FED985","#F8854D","#CCEA83","#FECC7A","#E65135","#B5E074","#77C465","#A6D96A","#FEB667","#FFF4AD","#FFFDBC","#AF0D26","#F9FDB7","#FCA55C","#60B961","#FEE593","#A0D669","#A9DA6C","#D6EE89","#D1EC86","#EA5A39","#33A155","#118747","#E0452F","#E34B32","#D83428","#16914C","#70C164","#C7E77F","#FDB365","#C0E47A","#FDAB5F","#FEBB6B","#FEE390","#E95737","#F16840","#06743D","#3FA758","#42A958","#FEE28E","#FEBD6D","#FFEB9D","#E5F49B","#50B05C","#209A51","#FFE695","#BBE277","#FFEEA2","#B3DF72","#FB9B58","#AA0726","#9AD369","#2F9F54","#F8884F","#AC0A26","#DFF193","#DE422E","#5AB65F","#FDAE61","#8ACC67","#158E4B","#B8E176","#81C866","#036F3B","#FFF1A8","#F7824C","#E8F5A0","#A70326","#D42E27","#CF2A27","#F67747","#F98F52","#E44E33","#B61627","#D9EF8B","#B11027","#F98B50","#FA9555","#FFFAB7","#0A7B41","#006837","#B41327","#F8FCB5","#FEE08B","#E6F59D","#ECF7A5","#FECF7C","#FDB163","#84CA66","#148C4A","#FFECA0","#5DB760","#FCA25B","#FFFFBF","#B0DD71","#C2E57C","#E14830","#E1F295","#7EC765","#CFEB84","#37A356","#ABDB6D","#FDFEBC","#D22C27","#6ABE63","#FFE898","#46AA59","#FEC776","#FBFDBA","#FCA85E","#EEF8A8","#016A38","#DDF190","#0B7D42","#FECA78","#CD2927","#F67B49","#3BA557","#19964F","#F4FAAF","#FFF7B2","#FB9856","#FFF6AF","#FA9253","#0D8043","#FEC574","#94D168","#FED682","#EC5D3A","#EE623D","#D73027","#DD3E2C","#FFEFA5","#F36A42","#BB1A27","#D4ED88","#108446","#7AC565","#1A9850","#49AC5A","#66BD63","#0E8245","#FED17E","#C5E67E","#F57446","#9DD569","#128948","#F77E4A","#F57144","#FB9F59","#6DC064","#74C364","#F0653F","#57B45E","#C01F27","#FEDE89","#AEDC6F","#07763E","#BDE379","#F46D43","#ED5F3C","#A3D86A","#CA2727","#53B25D","#91CF68","#E75436","#63BB62","#8DCE67","#4DAE5B","#E3F398","#FEB869","#BE1D27","#087840","#DBF08E","#DB3B2B","#FEC070","#B91827","#FEC272","#A50026","#F0F9AA","#2A9D53","#FFE99B","#C32127","#FEDB87","#04713C","#269C52","#FFF9B5","#F2F9AD"],"fillOpacity":0.5},["Country: Afghanistan <br> Confirmed Cases:  209451 <br> Deaths: 7896","Country: Albania <br> Confirmed Cases:  334457 <br> Deaths: 3598","Country: Algeria <br> Confirmed Cases:  271496 <br> Deaths: 6881","Country: Andorra <br> Confirmed Cases:  47890 <br> Deaths: 165","Country: Angola <br> Confirmed Cases:  105288 <br> Deaths: 1933","Country: Antarctica <br> Confirmed Cases:  11 <br> Deaths: 0","Country: Antigua and Barbuda <br> Confirmed Cases:  9106 <br> Deaths: 146","Country: Argentina <br> Confirmed Cases:  10044957 <br> Deaths: 130472","Country: Armenia <br> Confirmed Cases:  447308 <br> Deaths: 8727","Country: Australia <br> Confirmed Cases:  11399460 <br> Deaths: 19574","Country: Austria <br> Confirmed Cases:  5961143 <br> Deaths: 21970","Country: Azerbaijan <br> Confirmed Cases:  828825 <br> Deaths: 10138","Country: Bahamas <br> Confirmed Cases:  37491 <br> Deaths: 833","Country: Bahrain <br> Confirmed Cases:  710693 <br> Deaths: 1553","Country: Bangladesh <br> Confirmed Cases:  2037871 <br> Deaths: 29445","Country: Barbados <br> Confirmed Cases:  106798 <br> Deaths: 579","Country: Belarus <br> Confirmed Cases:  994037 <br> Deaths: 7118","Country: Belgium <br> Confirmed Cases:  4739365 <br> Deaths: 33814","Country: Belize <br> Confirmed Cases:  70757 <br> Deaths: 688","Country: Benin <br> Confirmed Cases:  27999 <br> Deaths: 163","Country: Bhutan <br> Confirmed Cases:  62627 <br> Deaths: 21","Country: Bolivia <br> Confirmed Cases:  1194277 <br> Deaths: 22365","Country: Bosnia and Herzegovina <br> Confirmed Cases:  401729 <br> Deaths: 16280","Country: Botswana <br> Confirmed Cases:  329758 <br> Deaths: 2801","Country: Brazil <br> Confirmed Cases:  37076053 <br> Deaths: 699276","Country: Brunei <br> Confirmed Cases:  279661 <br> Deaths: 225","Country: Bulgaria <br> Confirmed Cases:  1297523 <br> Deaths: 38228","Country: Burkina Faso <br> Confirmed Cases:  22056 <br> Deaths: 396","Country: Burma <br> Confirmed Cases:  633950 <br> Deaths: 19490","Country: Burundi <br> Confirmed Cases:  53631 <br> Deaths: 38","Country: Cabo Verde <br> Confirmed Cases:  63244 <br> Deaths: 413","Country: Cambodia <br> Confirmed Cases:  138719 <br> Deaths: 3056","Country: Cameroon <br> Confirmed Cases:  124392 <br> Deaths: 1965","Country: Canada <br> Confirmed Cases:  4617095 <br> Deaths: 51720","Country: Central African Republic <br> Confirmed Cases:  15368 <br> Deaths: 113","Country: Chad <br> Confirmed Cases:  7679 <br> Deaths: 194","Country: Chile <br> Confirmed Cases:  5192286 <br> Deaths: 64273","Country: China <br> Confirmed Cases:  4903524 <br> Deaths: 101056","Country: Colombia <br> Confirmed Cases:  6359093 <br> Deaths: 142339","Country: Comoros <br> Confirmed Cases:  9008 <br> Deaths: 161","Country: Congo (Brazzaville) <br> Confirmed Cases:  25087 <br> Deaths: 388","Country: Congo (Kinshasa) <br> Confirmed Cases:  95749 <br> Deaths: 1464","Country: Costa Rica <br> Confirmed Cases:  1209725 <br> Deaths: 9245","Country: Cote d'Ivoire <br> Confirmed Cases:  88263 <br> Deaths: 834","Country: Croatia <br> Confirmed Cases:  1269326 <br> Deaths: 17987","Country: Cuba <br> Confirmed Cases:  1112643 <br> Deaths: 8530","Country: Cyprus <br> Confirmed Cases:  650685 <br> Deaths: 1330","Country: Czechia <br> Confirmed Cases:  4618256 <br> Deaths: 42491","Country: Denmark <br> Confirmed Cases:  3451036 <br> Deaths: 8345","Country: Diamond Princess <br> Confirmed Cases:  712 <br> Deaths: 13","Country: Djibouti <br> Confirmed Cases:  15690 <br> Deaths: 189","Country: Dominica <br> Confirmed Cases:  15760 <br> Deaths: 74","Country: Dominican Republic <br> Confirmed Cases:  660790 <br> Deaths: 4384","Country: Ecuador <br> Confirmed Cases:  1057121 <br> Deaths: 36014","Country: Egypt <br> Confirmed Cases:  515759 <br> Deaths: 24812","Country: El Salvador <br> Confirmed Cases:  201785 <br> Deaths: 4230","Country: Equatorial Guinea <br> Confirmed Cases:  17229 <br> Deaths: 183","Country: Eritrea <br> Confirmed Cases:  10189 <br> Deaths: 103","Country: Estonia <br> Confirmed Cases:  615433 <br> Deaths: 2946","Country: Eswatini <br> Confirmed Cases:  74267 <br> Deaths: 1425","Country: Ethiopia <br> Confirmed Cases:  500116 <br> Deaths: 7572","Country: Fiji <br> Confirmed Cases:  68898 <br> Deaths: 883","Country: Finland <br> Confirmed Cases:  1463644 <br> Deaths: 8967","Country: France <br> Confirmed Cases:  39866718 <br> Deaths: 166176","Country: Gabon <br> Confirmed Cases:  48981 <br> Deaths: 306","Country: Gambia <br> Confirmed Cases:  12598 <br> Deaths: 372","Country: Georgia <br> Confirmed Cases:  1827537 <br> Deaths: 16971","Country: Germany <br> Confirmed Cases:  38249060 <br> Deaths: 168935","Country: Ghana <br> Confirmed Cases:  171229 <br> Deaths: 1462","Country: Greece <br> Confirmed Cases:  5548487 <br> Deaths: 34779","Country: Grenada <br> Confirmed Cases:  19680 <br> Deaths: 238","Country: Guatemala <br> Confirmed Cases:  1238247 <br> Deaths: 20182","Country: Guinea <br> Confirmed Cases:  38267 <br> Deaths: 467","Country: Guinea-Bissau <br> Confirmed Cases:  8960 <br> Deaths: 176","Country: Guyana <br> Confirmed Cases:  73075 <br> Deaths: 1298","Country: Haiti <br> Confirmed Cases:  34202 <br> Deaths: 860","Country: Holy See <br> Confirmed Cases:  29 <br> Deaths: 0","Country: Honduras <br> Confirmed Cases:  472250 <br> Deaths: 11111","Country: Hungary <br> Confirmed Cases:  2196804 <br> Deaths: 48762","Country: Iceland <br> Confirmed Cases:  209137 <br> Deaths: 263","Country: India <br> Confirmed Cases:  44690738 <br> Deaths: 530779","Country: Indonesia <br> Confirmed Cases:  6738225 <br> Deaths: 160941","Country: Iran <br> Confirmed Cases:  7572311 <br> Deaths: 144933","Country: Iraq <br> Confirmed Cases:  2465545 <br> Deaths: 25375","Country: Ireland <br> Confirmed Cases:  1704502 <br> Deaths: 8708","Country: Israel <br> Confirmed Cases:  4803824 <br> Deaths: 12329","Country: Italy <br> Confirmed Cases:  25603510 <br> Deaths: 188322","Country: Jamaica <br> Confirmed Cases:  154416 <br> Deaths: 3514","Country: Japan <br> Confirmed Cases:  33320438 <br> Deaths: 72997","Country: Jordan <br> Confirmed Cases:  1746997 <br> Deaths: 14122","Country: Kazakhstan <br> Confirmed Cases:  1498668 <br> Deaths: 19071","Country: Kenya <br> Confirmed Cases:  342937 <br> Deaths: 5688","Country: Kiribati <br> Confirmed Cases:  5014 <br> Deaths: 18","Country: Korea, North <br> Confirmed Cases:  1 <br> Deaths: 6","Country: Korea, South <br> Confirmed Cases:  30615522 <br> Deaths: 34093","Country: Kosovo <br> Confirmed Cases:  273312 <br> Deaths: 3211","Country: Kuwait <br> Confirmed Cases:  663860 <br> Deaths: 2570","Country: Kyrgyzstan <br> Confirmed Cases:  206708 <br> Deaths: 2991","Country: Laos <br> Confirmed Cases:  218023 <br> Deaths: 758","Country: Latvia <br> Confirmed Cases:  976255 <br> Deaths: 6269","Country: Lebanon <br> Confirmed Cases:  1232828 <br> Deaths: 10841","Country: Lesotho <br> Confirmed Cases:  34790 <br> Deaths: 723","Country: Liberia <br> Confirmed Cases:  8090 <br> Deaths: 295","Country: Libya <br> Confirmed Cases:  507187 <br> Deaths: 6437","Country: Liechtenstein <br> Confirmed Cases:  21432 <br> Deaths: 89","Country: Lithuania <br> Confirmed Cases:  1307448 <br> Deaths: 9596","Country: Luxembourg <br> Confirmed Cases:  317367 <br> Deaths: 1220","Country: Madagascar <br> Confirmed Cases:  67889 <br> Deaths: 1423","Country: Malawi <br> Confirmed Cases:  88707 <br> Deaths: 2686","Country: Malaysia <br> Confirmed Cases:  5044718 <br> Deaths: 36967","Country: Maldives <br> Confirmed Cases:  185738 <br> Deaths: 311","Country: Mali <br> Confirmed Cases:  33062 <br> Deaths: 743","Country: Malta <br> Confirmed Cases:  117610 <br> Deaths: 828","Country: Marshall Islands <br> Confirmed Cases:  15649 <br> Deaths: 17","Country: Mauritania <br> Confirmed Cases:  63668 <br> Deaths: 997","Country: Mauritius <br> Confirmed Cases:  296042 <br> Deaths: 1044","Country: Mexico <br> Confirmed Cases:  7483444 <br> Deaths: 333188","Country: Micronesia <br> Confirmed Cases:  23948 <br> Deaths: 61","Country: Moldova <br> Confirmed Cases:  611140 <br> Deaths: 12003","Country: Monaco <br> Confirmed Cases:  16121 <br> Deaths: 67","Country: Mongolia <br> Confirmed Cases:  1007900 <br> Deaths: 2136","Country: Montenegro <br> Confirmed Cases:  288808 <br> Deaths: 2808","Country: Morocco <br> Confirmed Cases:  1272490 <br> Deaths: 16296","Country: Mozambique <br> Confirmed Cases:  233214 <br> Deaths: 2242","Country: MS Zaandam <br> Confirmed Cases:  9 <br> Deaths: 2","Country: Namibia <br> Confirmed Cases:  171156 <br> Deaths: 4090","Country: Nauru <br> Confirmed Cases:  5247 <br> Deaths: 1","Country: Nepal <br> Confirmed Cases:  1001154 <br> Deaths: 12020","Country: Netherlands <br> Confirmed Cases:  8712835 <br> Deaths: 23705","Country: New Zealand <br> Confirmed Cases:  2236114 <br> Deaths: 2550","Country: Nicaragua <br> Confirmed Cases:  15655 <br> Deaths: 245","Country: Niger <br> Confirmed Cases:  9508 <br> Deaths: 315","Country: Nigeria <br> Confirmed Cases:  266598 <br> Deaths: 3155","Country: North Macedonia <br> Confirmed Cases:  346852 <br> Deaths: 9662","Country: Norway <br> Confirmed Cases:  1479506 <br> Deaths: 5213","Country: Oman <br> Confirmed Cases:  399449 <br> Deaths: 4628","Country: Pakistan <br> Confirmed Cases:  1577411 <br> Deaths: 30644","Country: Palau <br> Confirmed Cases:  5991 <br> Deaths: 9","Country: Panama <br> Confirmed Cases:  1031731 <br> Deaths: 8609","Country: Papua New Guinea <br> Confirmed Cases:  46825 <br> Deaths: 670","Country: Paraguay <br> Confirmed Cases:  808401 <br> Deaths: 19878","Country: Peru <br> Confirmed Cases:  4487553 <br> Deaths: 219539","Country: Philippines <br> Confirmed Cases:  4077452 <br> Deaths: 66188","Country: Poland <br> Confirmed Cases:  6444960 <br> Deaths: 119010","Country: Portugal <br> Confirmed Cases:  5570473 <br> Deaths: 26266","Country: Qatar <br> Confirmed Cases:  495090 <br> Deaths: 688","Country: Romania <br> Confirmed Cases:  3346046 <br> Deaths: 67736","Country: Russia <br> Confirmed Cases:  22075858 <br> Deaths: 388478","Country: Rwanda <br> Confirmed Cases:  133194 <br> Deaths: 1468","Country: Saint Kitts and Nevis <br> Confirmed Cases:  6597 <br> Deaths: 47","Country: Saint Lucia <br> Confirmed Cases:  30004 <br> Deaths: 409","Country: Saint Vincent and the Grenadines <br> Confirmed Cases:  9589 <br> Deaths: 123","Country: Samoa <br> Confirmed Cases:  16607 <br> Deaths: 29","Country: San Marino <br> Confirmed Cases:  23616 <br> Deaths: 122","Country: Sao Tome and Principe <br> Confirmed Cases:  6281 <br> Deaths: 77","Country: Saudi Arabia <br> Confirmed Cases:  830127 <br> Deaths: 9618","Country: Senegal <br> Confirmed Cases:  88926 <br> Deaths: 1971","Country: Serbia <br> Confirmed Cases:  2500142 <br> Deaths: 17881","Country: Seychelles <br> Confirmed Cases:  50665 <br> Deaths: 172","Country: Sierra Leone <br> Confirmed Cases:  7760 <br> Deaths: 126","Country: Singapore <br> Confirmed Cases:  2235294 <br> Deaths: 1722","Country: Slovakia <br> Confirmed Cases:  2667551 <br> Deaths: 21035","Country: Slovenia <br> Confirmed Cases:  1331707 <br> Deaths: 7078","Country: Solomon Islands <br> Confirmed Cases:  24575 <br> Deaths: 153","Country: Somalia <br> Confirmed Cases:  27324 <br> Deaths: 1361","Country: South Africa <br> Confirmed Cases:  4067067 <br> Deaths: 102595","Country: South Sudan <br> Confirmed Cases:  18368 <br> Deaths: 138","Country: Spain <br> Confirmed Cases:  13770429 <br> Deaths: 119479","Country: Sri Lanka <br> Confirmed Cases:  672039 <br> Deaths: 16830","Country: Sudan <br> Confirmed Cases:  63829 <br> Deaths: 5017","Country: Summer Olympics 2020 <br> Confirmed Cases:  865 <br> Deaths: 0","Country: Suriname <br> Confirmed Cases:  82467 <br> Deaths: 1404","Country: Sweden <br> Confirmed Cases:  2699339 <br> Deaths: 23777","Country: Switzerland <br> Confirmed Cases:  4413911 <br> Deaths: 14210","Country: Syria <br> Confirmed Cases:  57467 <br> Deaths: 3164","Country: Taiwan* <br> Confirmed Cases:  9970937 <br> Deaths: 17672","Country: Tajikistan <br> Confirmed Cases:  17786 <br> Deaths: 125","Country: Tanzania <br> Confirmed Cases:  42906 <br> Deaths: 846","Country: Thailand <br> Confirmed Cases:  4728182 <br> Deaths: 33918","Country: Timor-Leste <br> Confirmed Cases:  23419 <br> Deaths: 138","Country: Togo <br> Confirmed Cases:  39396 <br> Deaths: 290","Country: Tonga <br> Confirmed Cases:  16810 <br> Deaths: 13","Country: Trinidad and Tobago <br> Confirmed Cases:  189918 <br> Deaths: 4355","Country: Tunisia <br> Confirmed Cases:  1151126 <br> Deaths: 29341","Country: Turkey <br> Confirmed Cases:  17042722 <br> Deaths: 101492","Country: Tuvalu <br> Confirmed Cases:  2805 <br> Deaths: 0","Country: Uganda <br> Confirmed Cases:  170544 <br> Deaths: 3630","Country: Ukraine <br> Confirmed Cases:  5711929 <br> Deaths: 119283","Country: United Arab Emirates <br> Confirmed Cases:  1053213 <br> Deaths: 2349","Country: United Kingdom <br> Confirmed Cases:  24658705 <br> Deaths: 220721","Country: Uruguay <br> Confirmed Cases:  1034303 <br> Deaths: 7617","Country: US <br> Confirmed Cases:  103802702 <br> Deaths: 1123836","Country: Uzbekistan <br> Confirmed Cases:  251247 <br> Deaths: 1637","Country: Vanuatu <br> Confirmed Cases:  12014 <br> Deaths: 14","Country: Venezuela <br> Confirmed Cases:  552162 <br> Deaths: 5854","Country: Vietnam <br> Confirmed Cases:  11526994 <br> Deaths: 43186","Country: West Bank and Gaza <br> Confirmed Cases:  703228 <br> Deaths: 5708","Country: Winter Olympics 2022 <br> Confirmed Cases:  535 <br> Deaths: 0","Country: Yemen <br> Confirmed Cases:  11945 <br> Deaths: 2159","Country: Zambia <br> Confirmed Cases:  343135 <br> Deaths: 4057","Country: Zimbabwe <br> Confirmed Cases:  264276 <br> Deaths: 5671"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null,null]}],"setView":[[40,-100],5,[]],"limits":{"lat":[-71.9499,64.9631],"lng":[-175.1982,178.065]}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="objective-2---narrowing-down-hot-spots" class="section level1">
+<h1>Objective 2 - Narrowing Down Hot Spots</h1>
+<pre class="r"><code># Order and rank Covid-19 confirmed cases and deaths
+confirmed_rank &lt;- grouped_confirmed %&gt;%
+  select(1,4)%&gt;%
+  arrange(desc(.[, 2])) %&gt;%
+  mutate(rank = row_number()) %&gt;%
+  select(rank, everything())
+
+death_rank &lt;- grouped_deaths %&gt;%
+  select(1,4)%&gt;%
+  arrange(desc(.[, 2])) %&gt;%
+  mutate(rank = row_number()) %&gt;%
+  select(rank, everything())
+
+
+# Merge the data frames based on rank
+grouped_rank &lt;-merge(confirmed_rank, death_rank, by = &quot;rank&quot;) 
+
+# Print the tables of confirmed cases using kable
+kable(grouped_rank, col.names = c(&quot;Rank&quot;, &quot;Country&quot;, &quot;Confirmed Cases Count&quot;, &quot;Country&quot;, &quot;Death Count&quot;), caption = &quot;Top Countries&quot;) %&gt;%
+  kable_styling(fixed_thead = T) %&gt;%
+  kable_paper() %&gt;%
+  scroll_box(width = &quot;100%&quot;, height = &quot;500px&quot;)</code></pre>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; ">
+<table class="table lightable-paper" style="margin-left: auto; margin-right: auto; font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+<caption>
+Top Countries
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Rank
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Country
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Confirmed Cases Count
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Country
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Death Count
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+US
+</td>
+<td style="text-align:right;">
+103802702
+</td>
+<td style="text-align:left;">
+US
+</td>
+<td style="text-align:right;">
+1123836
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+India
+</td>
+<td style="text-align:right;">
+44690738
+</td>
+<td style="text-align:left;">
+Brazil
+</td>
+<td style="text-align:right;">
+699276
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+France
+</td>
+<td style="text-align:right;">
+39866718
+</td>
+<td style="text-align:left;">
+India
+</td>
+<td style="text-align:right;">
+530779
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+Germany
+</td>
+<td style="text-align:right;">
+38249060
+</td>
+<td style="text-align:left;">
+Russia
+</td>
+<td style="text-align:right;">
+388478
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+Brazil
+</td>
+<td style="text-align:right;">
+37076053
+</td>
+<td style="text-align:left;">
+Mexico
+</td>
+<td style="text-align:right;">
+333188
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:left;">
+Japan
+</td>
+<td style="text-align:right;">
+33320438
+</td>
+<td style="text-align:left;">
+United Kingdom
+</td>
+<td style="text-align:right;">
+220721
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+Korea, South
+</td>
+<td style="text-align:right;">
+30615522
+</td>
+<td style="text-align:left;">
+Peru
+</td>
+<td style="text-align:right;">
+219539
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:left;">
+Italy
+</td>
+<td style="text-align:right;">
+25603510
+</td>
+<td style="text-align:left;">
+Italy
+</td>
+<td style="text-align:right;">
+188322
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+United Kingdom
+</td>
+<td style="text-align:right;">
+24658705
+</td>
+<td style="text-align:left;">
+Germany
+</td>
+<td style="text-align:right;">
+168935
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:left;">
+Russia
+</td>
+<td style="text-align:right;">
+22075858
+</td>
+<td style="text-align:left;">
+France
+</td>
+<td style="text-align:right;">
+166176
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:left;">
+Turkey
+</td>
+<td style="text-align:right;">
+17042722
+</td>
+<td style="text-align:left;">
+Indonesia
+</td>
+<td style="text-align:right;">
+160941
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:left;">
+Spain
+</td>
+<td style="text-align:right;">
+13770429
+</td>
+<td style="text-align:left;">
+Iran
+</td>
+<td style="text-align:right;">
+144933
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:left;">
+Vietnam
+</td>
+<td style="text-align:right;">
+11526994
+</td>
+<td style="text-align:left;">
+Colombia
+</td>
+<td style="text-align:right;">
+142339
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:left;">
+Australia
+</td>
+<td style="text-align:right;">
+11399460
+</td>
+<td style="text-align:left;">
+Argentina
+</td>
+<td style="text-align:right;">
+130472
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:left;">
+Argentina
+</td>
+<td style="text-align:right;">
+10044957
+</td>
+<td style="text-align:left;">
+Spain
+</td>
+<td style="text-align:right;">
+119479
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:left;">
+Taiwan*
+</td>
+<td style="text-align:right;">
+9970937
+</td>
+<td style="text-align:left;">
+Ukraine
+</td>
+<td style="text-align:right;">
+119283
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:left;">
+Netherlands
+</td>
+<td style="text-align:right;">
+8712835
+</td>
+<td style="text-align:left;">
+Poland
+</td>
+<td style="text-align:right;">
+119010
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+Iran
+</td>
+<td style="text-align:right;">
+7572311
+</td>
+<td style="text-align:left;">
+South Africa
+</td>
+<td style="text-align:right;">
+102595
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:left;">
+Mexico
+</td>
+<td style="text-align:right;">
+7483444
+</td>
+<td style="text-align:left;">
+Turkey
+</td>
+<td style="text-align:right;">
+101492
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:left;">
+Indonesia
+</td>
+<td style="text-align:right;">
+6738225
+</td>
+<td style="text-align:left;">
+China
+</td>
+<td style="text-align:right;">
+101056
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+21
+</td>
+<td style="text-align:left;">
+Poland
+</td>
+<td style="text-align:right;">
+6444960
+</td>
+<td style="text-align:left;">
+Japan
+</td>
+<td style="text-align:right;">
+72997
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+22
+</td>
+<td style="text-align:left;">
+Colombia
+</td>
+<td style="text-align:right;">
+6359093
+</td>
+<td style="text-align:left;">
+Romania
+</td>
+<td style="text-align:right;">
+67736
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+23
+</td>
+<td style="text-align:left;">
+Austria
+</td>
+<td style="text-align:right;">
+5961143
+</td>
+<td style="text-align:left;">
+Philippines
+</td>
+<td style="text-align:right;">
+66188
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+24
+</td>
+<td style="text-align:left;">
+Ukraine
+</td>
+<td style="text-align:right;">
+5711929
+</td>
+<td style="text-align:left;">
+Chile
+</td>
+<td style="text-align:right;">
+64273
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+25
+</td>
+<td style="text-align:left;">
+Portugal
+</td>
+<td style="text-align:right;">
+5570473
+</td>
+<td style="text-align:left;">
+Canada
+</td>
+<td style="text-align:right;">
+51720
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+26
+</td>
+<td style="text-align:left;">
+Greece
+</td>
+<td style="text-align:right;">
+5548487
+</td>
+<td style="text-align:left;">
+Hungary
+</td>
+<td style="text-align:right;">
+48762
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+27
+</td>
+<td style="text-align:left;">
+Chile
+</td>
+<td style="text-align:right;">
+5192286
+</td>
+<td style="text-align:left;">
+Vietnam
+</td>
+<td style="text-align:right;">
+43186
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+28
+</td>
+<td style="text-align:left;">
+Malaysia
+</td>
+<td style="text-align:right;">
+5044718
+</td>
+<td style="text-align:left;">
+Czechia
+</td>
+<td style="text-align:right;">
+42491
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+29
+</td>
+<td style="text-align:left;">
+China
+</td>
+<td style="text-align:right;">
+4903524
+</td>
+<td style="text-align:left;">
+Bulgaria
+</td>
+<td style="text-align:right;">
+38228
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+30
+</td>
+<td style="text-align:left;">
+Israel
+</td>
+<td style="text-align:right;">
+4803824
+</td>
+<td style="text-align:left;">
+Malaysia
+</td>
+<td style="text-align:right;">
+36967
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+31
+</td>
+<td style="text-align:left;">
+Belgium
+</td>
+<td style="text-align:right;">
+4739365
+</td>
+<td style="text-align:left;">
+Ecuador
+</td>
+<td style="text-align:right;">
+36014
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+32
+</td>
+<td style="text-align:left;">
+Thailand
+</td>
+<td style="text-align:right;">
+4728182
+</td>
+<td style="text-align:left;">
+Greece
+</td>
+<td style="text-align:right;">
+34779
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+33
+</td>
+<td style="text-align:left;">
+Czechia
+</td>
+<td style="text-align:right;">
+4618256
+</td>
+<td style="text-align:left;">
+Korea, South
+</td>
+<td style="text-align:right;">
+34093
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+34
+</td>
+<td style="text-align:left;">
+Canada
+</td>
+<td style="text-align:right;">
+4617095
+</td>
+<td style="text-align:left;">
+Thailand
+</td>
+<td style="text-align:right;">
+33918
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+35
+</td>
+<td style="text-align:left;">
+Peru
+</td>
+<td style="text-align:right;">
+4487553
+</td>
+<td style="text-align:left;">
+Belgium
+</td>
+<td style="text-align:right;">
+33814
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+36
+</td>
+<td style="text-align:left;">
+Switzerland
+</td>
+<td style="text-align:right;">
+4413911
+</td>
+<td style="text-align:left;">
+Pakistan
+</td>
+<td style="text-align:right;">
+30644
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+37
+</td>
+<td style="text-align:left;">
+Philippines
+</td>
+<td style="text-align:right;">
+4077452
+</td>
+<td style="text-align:left;">
+Bangladesh
+</td>
+<td style="text-align:right;">
+29445
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+38
+</td>
+<td style="text-align:left;">
+South Africa
+</td>
+<td style="text-align:right;">
+4067067
+</td>
+<td style="text-align:left;">
+Tunisia
+</td>
+<td style="text-align:right;">
+29341
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+39
+</td>
+<td style="text-align:left;">
+Denmark
+</td>
+<td style="text-align:right;">
+3451036
+</td>
+<td style="text-align:left;">
+Portugal
+</td>
+<td style="text-align:right;">
+26266
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+40
+</td>
+<td style="text-align:left;">
+Romania
+</td>
+<td style="text-align:right;">
+3346046
+</td>
+<td style="text-align:left;">
+Iraq
+</td>
+<td style="text-align:right;">
+25375
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+41
+</td>
+<td style="text-align:left;">
+Sweden
+</td>
+<td style="text-align:right;">
+2699339
+</td>
+<td style="text-align:left;">
+Egypt
+</td>
+<td style="text-align:right;">
+24812
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+42
+</td>
+<td style="text-align:left;">
+Slovakia
+</td>
+<td style="text-align:right;">
+2667551
+</td>
+<td style="text-align:left;">
+Sweden
+</td>
+<td style="text-align:right;">
+23777
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+43
+</td>
+<td style="text-align:left;">
+Serbia
+</td>
+<td style="text-align:right;">
+2500142
+</td>
+<td style="text-align:left;">
+Netherlands
+</td>
+<td style="text-align:right;">
+23705
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+44
+</td>
+<td style="text-align:left;">
+Iraq
+</td>
+<td style="text-align:right;">
+2465545
+</td>
+<td style="text-align:left;">
+Bolivia
+</td>
+<td style="text-align:right;">
+22365
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+45
+</td>
+<td style="text-align:left;">
+New Zealand
+</td>
+<td style="text-align:right;">
+2236114
+</td>
+<td style="text-align:left;">
+Austria
+</td>
+<td style="text-align:right;">
+21970
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+46
+</td>
+<td style="text-align:left;">
+Singapore
+</td>
+<td style="text-align:right;">
+2235294
+</td>
+<td style="text-align:left;">
+Slovakia
+</td>
+<td style="text-align:right;">
+21035
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+47
+</td>
+<td style="text-align:left;">
+Hungary
+</td>
+<td style="text-align:right;">
+2196804
+</td>
+<td style="text-align:left;">
+Guatemala
+</td>
+<td style="text-align:right;">
+20182
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:left;">
+Bangladesh
+</td>
+<td style="text-align:right;">
+2037871
+</td>
+<td style="text-align:left;">
+Paraguay
+</td>
+<td style="text-align:right;">
+19878
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+49
+</td>
+<td style="text-align:left;">
+Georgia
+</td>
+<td style="text-align:right;">
+1827537
+</td>
+<td style="text-align:left;">
+Australia
+</td>
+<td style="text-align:right;">
+19574
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:left;">
+Jordan
+</td>
+<td style="text-align:right;">
+1746997
+</td>
+<td style="text-align:left;">
+Burma
+</td>
+<td style="text-align:right;">
+19490
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+51
+</td>
+<td style="text-align:left;">
+Ireland
+</td>
+<td style="text-align:right;">
+1704502
+</td>
+<td style="text-align:left;">
+Kazakhstan
+</td>
+<td style="text-align:right;">
+19071
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+52
+</td>
+<td style="text-align:left;">
+Pakistan
+</td>
+<td style="text-align:right;">
+1577411
+</td>
+<td style="text-align:left;">
+Croatia
+</td>
+<td style="text-align:right;">
+17987
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+53
+</td>
+<td style="text-align:left;">
+Kazakhstan
+</td>
+<td style="text-align:right;">
+1498668
+</td>
+<td style="text-align:left;">
+Serbia
+</td>
+<td style="text-align:right;">
+17881
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+54
+</td>
+<td style="text-align:left;">
+Norway
+</td>
+<td style="text-align:right;">
+1479506
+</td>
+<td style="text-align:left;">
+Taiwan*
+</td>
+<td style="text-align:right;">
+17672
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+55
+</td>
+<td style="text-align:left;">
+Finland
+</td>
+<td style="text-align:right;">
+1463644
+</td>
+<td style="text-align:left;">
+Georgia
+</td>
+<td style="text-align:right;">
+16971
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+56
+</td>
+<td style="text-align:left;">
+Slovenia
+</td>
+<td style="text-align:right;">
+1331707
+</td>
+<td style="text-align:left;">
+Sri Lanka
+</td>
+<td style="text-align:right;">
+16830
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+57
+</td>
+<td style="text-align:left;">
+Lithuania
+</td>
+<td style="text-align:right;">
+1307448
+</td>
+<td style="text-align:left;">
+Morocco
+</td>
+<td style="text-align:right;">
+16296
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+58
+</td>
+<td style="text-align:left;">
+Bulgaria
+</td>
+<td style="text-align:right;">
+1297523
+</td>
+<td style="text-align:left;">
+Bosnia and Herzegovina
+</td>
+<td style="text-align:right;">
+16280
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+59
+</td>
+<td style="text-align:left;">
+Morocco
+</td>
+<td style="text-align:right;">
+1272490
+</td>
+<td style="text-align:left;">
+Switzerland
+</td>
+<td style="text-align:right;">
+14210
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+60
+</td>
+<td style="text-align:left;">
+Croatia
+</td>
+<td style="text-align:right;">
+1269326
+</td>
+<td style="text-align:left;">
+Jordan
+</td>
+<td style="text-align:right;">
+14122
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+61
+</td>
+<td style="text-align:left;">
+Guatemala
+</td>
+<td style="text-align:right;">
+1238247
+</td>
+<td style="text-align:left;">
+Israel
+</td>
+<td style="text-align:right;">
+12329
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+62
+</td>
+<td style="text-align:left;">
+Lebanon
+</td>
+<td style="text-align:right;">
+1232828
+</td>
+<td style="text-align:left;">
+Nepal
+</td>
+<td style="text-align:right;">
+12020
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+63
+</td>
+<td style="text-align:left;">
+Costa Rica
+</td>
+<td style="text-align:right;">
+1209725
+</td>
+<td style="text-align:left;">
+Moldova
+</td>
+<td style="text-align:right;">
+12003
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+64
+</td>
+<td style="text-align:left;">
+Bolivia
+</td>
+<td style="text-align:right;">
+1194277
+</td>
+<td style="text-align:left;">
+Honduras
+</td>
+<td style="text-align:right;">
+11111
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+65
+</td>
+<td style="text-align:left;">
+Tunisia
+</td>
+<td style="text-align:right;">
+1151126
+</td>
+<td style="text-align:left;">
+Lebanon
+</td>
+<td style="text-align:right;">
+10841
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+66
+</td>
+<td style="text-align:left;">
+Cuba
+</td>
+<td style="text-align:right;">
+1112643
+</td>
+<td style="text-align:left;">
+Azerbaijan
+</td>
+<td style="text-align:right;">
+10138
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+67
+</td>
+<td style="text-align:left;">
+Ecuador
+</td>
+<td style="text-align:right;">
+1057121
+</td>
+<td style="text-align:left;">
+North Macedonia
+</td>
+<td style="text-align:right;">
+9662
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+68
+</td>
+<td style="text-align:left;">
+United Arab Emirates
+</td>
+<td style="text-align:right;">
+1053213
+</td>
+<td style="text-align:left;">
+Saudi Arabia
+</td>
+<td style="text-align:right;">
+9618
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+69
+</td>
+<td style="text-align:left;">
+Uruguay
+</td>
+<td style="text-align:right;">
+1034303
+</td>
+<td style="text-align:left;">
+Lithuania
+</td>
+<td style="text-align:right;">
+9596
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+70
+</td>
+<td style="text-align:left;">
+Panama
+</td>
+<td style="text-align:right;">
+1031731
+</td>
+<td style="text-align:left;">
+Costa Rica
+</td>
+<td style="text-align:right;">
+9245
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+71
+</td>
+<td style="text-align:left;">
+Mongolia
+</td>
+<td style="text-align:right;">
+1007900
+</td>
+<td style="text-align:left;">
+Finland
+</td>
+<td style="text-align:right;">
+8967
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:left;">
+Nepal
+</td>
+<td style="text-align:right;">
+1001154
+</td>
+<td style="text-align:left;">
+Armenia
+</td>
+<td style="text-align:right;">
+8727
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+73
+</td>
+<td style="text-align:left;">
+Belarus
+</td>
+<td style="text-align:right;">
+994037
+</td>
+<td style="text-align:left;">
+Ireland
+</td>
+<td style="text-align:right;">
+8708
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+74
+</td>
+<td style="text-align:left;">
+Latvia
+</td>
+<td style="text-align:right;">
+976255
+</td>
+<td style="text-align:left;">
+Panama
+</td>
+<td style="text-align:right;">
+8609
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+75
+</td>
+<td style="text-align:left;">
+Saudi Arabia
+</td>
+<td style="text-align:right;">
+830127
+</td>
+<td style="text-align:left;">
+Cuba
+</td>
+<td style="text-align:right;">
+8530
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+76
+</td>
+<td style="text-align:left;">
+Azerbaijan
+</td>
+<td style="text-align:right;">
+828825
+</td>
+<td style="text-align:left;">
+Denmark
+</td>
+<td style="text-align:right;">
+8345
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+77
+</td>
+<td style="text-align:left;">
+Paraguay
+</td>
+<td style="text-align:right;">
+808401
+</td>
+<td style="text-align:left;">
+Afghanistan
+</td>
+<td style="text-align:right;">
+7896
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+78
+</td>
+<td style="text-align:left;">
+Bahrain
+</td>
+<td style="text-align:right;">
+710693
+</td>
+<td style="text-align:left;">
+Uruguay
+</td>
+<td style="text-align:right;">
+7617
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+79
+</td>
+<td style="text-align:left;">
+West Bank and Gaza
+</td>
+<td style="text-align:right;">
+703228
+</td>
+<td style="text-align:left;">
+Ethiopia
+</td>
+<td style="text-align:right;">
+7572
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+80
+</td>
+<td style="text-align:left;">
+Sri Lanka
+</td>
+<td style="text-align:right;">
+672039
+</td>
+<td style="text-align:left;">
+Belarus
+</td>
+<td style="text-align:right;">
+7118
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+81
+</td>
+<td style="text-align:left;">
+Kuwait
+</td>
+<td style="text-align:right;">
+663860
+</td>
+<td style="text-align:left;">
+Slovenia
+</td>
+<td style="text-align:right;">
+7078
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+82
+</td>
+<td style="text-align:left;">
+Dominican Republic
+</td>
+<td style="text-align:right;">
+660790
+</td>
+<td style="text-align:left;">
+Algeria
+</td>
+<td style="text-align:right;">
+6881
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+83
+</td>
+<td style="text-align:left;">
+Cyprus
+</td>
+<td style="text-align:right;">
+650685
+</td>
+<td style="text-align:left;">
+Libya
+</td>
+<td style="text-align:right;">
+6437
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+84
+</td>
+<td style="text-align:left;">
+Burma
+</td>
+<td style="text-align:right;">
+633950
+</td>
+<td style="text-align:left;">
+Latvia
+</td>
+<td style="text-align:right;">
+6269
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+85
+</td>
+<td style="text-align:left;">
+Estonia
+</td>
+<td style="text-align:right;">
+615433
+</td>
+<td style="text-align:left;">
+Venezuela
+</td>
+<td style="text-align:right;">
+5854
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+86
+</td>
+<td style="text-align:left;">
+Moldova
+</td>
+<td style="text-align:right;">
+611140
+</td>
+<td style="text-align:left;">
+West Bank and Gaza
+</td>
+<td style="text-align:right;">
+5708
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+87
+</td>
+<td style="text-align:left;">
+Venezuela
+</td>
+<td style="text-align:right;">
+552162
+</td>
+<td style="text-align:left;">
+Kenya
+</td>
+<td style="text-align:right;">
+5688
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+88
+</td>
+<td style="text-align:left;">
+Egypt
+</td>
+<td style="text-align:right;">
+515759
+</td>
+<td style="text-align:left;">
+Zimbabwe
+</td>
+<td style="text-align:right;">
+5671
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+89
+</td>
+<td style="text-align:left;">
+Libya
+</td>
+<td style="text-align:right;">
+507187
+</td>
+<td style="text-align:left;">
+Norway
+</td>
+<td style="text-align:right;">
+5213
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+90
+</td>
+<td style="text-align:left;">
+Ethiopia
+</td>
+<td style="text-align:right;">
+500116
+</td>
+<td style="text-align:left;">
+Sudan
+</td>
+<td style="text-align:right;">
+5017
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+91
+</td>
+<td style="text-align:left;">
+Qatar
+</td>
+<td style="text-align:right;">
+495090
+</td>
+<td style="text-align:left;">
+Oman
+</td>
+<td style="text-align:right;">
+4628
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+92
+</td>
+<td style="text-align:left;">
+Honduras
+</td>
+<td style="text-align:right;">
+472250
+</td>
+<td style="text-align:left;">
+Dominican Republic
+</td>
+<td style="text-align:right;">
+4384
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+93
+</td>
+<td style="text-align:left;">
+Armenia
+</td>
+<td style="text-align:right;">
+447308
+</td>
+<td style="text-align:left;">
+Trinidad and Tobago
+</td>
+<td style="text-align:right;">
+4355
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+94
+</td>
+<td style="text-align:left;">
+Bosnia and Herzegovina
+</td>
+<td style="text-align:right;">
+401729
+</td>
+<td style="text-align:left;">
+El Salvador
+</td>
+<td style="text-align:right;">
+4230
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+95
+</td>
+<td style="text-align:left;">
+Oman
+</td>
+<td style="text-align:right;">
+399449
+</td>
+<td style="text-align:left;">
+Namibia
+</td>
+<td style="text-align:right;">
+4090
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+96
+</td>
+<td style="text-align:left;">
+North Macedonia
+</td>
+<td style="text-align:right;">
+346852
+</td>
+<td style="text-align:left;">
+Zambia
+</td>
+<td style="text-align:right;">
+4057
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+97
+</td>
+<td style="text-align:left;">
+Zambia
+</td>
+<td style="text-align:right;">
+343135
+</td>
+<td style="text-align:left;">
+Uganda
+</td>
+<td style="text-align:right;">
+3630
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+98
+</td>
+<td style="text-align:left;">
+Kenya
+</td>
+<td style="text-align:right;">
+342937
+</td>
+<td style="text-align:left;">
+Albania
+</td>
+<td style="text-align:right;">
+3598
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+99
+</td>
+<td style="text-align:left;">
+Albania
+</td>
+<td style="text-align:right;">
+334457
+</td>
+<td style="text-align:left;">
+Jamaica
+</td>
+<td style="text-align:right;">
+3514
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:left;">
+Botswana
+</td>
+<td style="text-align:right;">
+329758
+</td>
+<td style="text-align:left;">
+Kosovo
+</td>
+<td style="text-align:right;">
+3211
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+101
+</td>
+<td style="text-align:left;">
+Luxembourg
+</td>
+<td style="text-align:right;">
+317367
+</td>
+<td style="text-align:left;">
+Syria
+</td>
+<td style="text-align:right;">
+3164
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+102
+</td>
+<td style="text-align:left;">
+Mauritius
+</td>
+<td style="text-align:right;">
+296042
+</td>
+<td style="text-align:left;">
+Nigeria
+</td>
+<td style="text-align:right;">
+3155
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+103
+</td>
+<td style="text-align:left;">
+Montenegro
+</td>
+<td style="text-align:right;">
+288808
+</td>
+<td style="text-align:left;">
+Cambodia
+</td>
+<td style="text-align:right;">
+3056
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+104
+</td>
+<td style="text-align:left;">
+Brunei
+</td>
+<td style="text-align:right;">
+279661
+</td>
+<td style="text-align:left;">
+Kyrgyzstan
+</td>
+<td style="text-align:right;">
+2991
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+105
+</td>
+<td style="text-align:left;">
+Kosovo
+</td>
+<td style="text-align:right;">
+273312
+</td>
+<td style="text-align:left;">
+Estonia
+</td>
+<td style="text-align:right;">
+2946
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+106
+</td>
+<td style="text-align:left;">
+Algeria
+</td>
+<td style="text-align:right;">
+271496
+</td>
+<td style="text-align:left;">
+Montenegro
+</td>
+<td style="text-align:right;">
+2808
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+107
+</td>
+<td style="text-align:left;">
+Nigeria
+</td>
+<td style="text-align:right;">
+266598
+</td>
+<td style="text-align:left;">
+Botswana
+</td>
+<td style="text-align:right;">
+2801
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+108
+</td>
+<td style="text-align:left;">
+Zimbabwe
+</td>
+<td style="text-align:right;">
+264276
+</td>
+<td style="text-align:left;">
+Malawi
+</td>
+<td style="text-align:right;">
+2686
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+109
+</td>
+<td style="text-align:left;">
+Uzbekistan
+</td>
+<td style="text-align:right;">
+251247
+</td>
+<td style="text-align:left;">
+Kuwait
+</td>
+<td style="text-align:right;">
+2570
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+110
+</td>
+<td style="text-align:left;">
+Mozambique
+</td>
+<td style="text-align:right;">
+233214
+</td>
+<td style="text-align:left;">
+New Zealand
+</td>
+<td style="text-align:right;">
+2550
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+111
+</td>
+<td style="text-align:left;">
+Laos
+</td>
+<td style="text-align:right;">
+218023
+</td>
+<td style="text-align:left;">
+United Arab Emirates
+</td>
+<td style="text-align:right;">
+2349
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+112
+</td>
+<td style="text-align:left;">
+Afghanistan
+</td>
+<td style="text-align:right;">
+209451
+</td>
+<td style="text-align:left;">
+Mozambique
+</td>
+<td style="text-align:right;">
+2242
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+113
+</td>
+<td style="text-align:left;">
+Iceland
+</td>
+<td style="text-align:right;">
+209137
+</td>
+<td style="text-align:left;">
+Yemen
+</td>
+<td style="text-align:right;">
+2159
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+114
+</td>
+<td style="text-align:left;">
+Kyrgyzstan
+</td>
+<td style="text-align:right;">
+206708
+</td>
+<td style="text-align:left;">
+Mongolia
+</td>
+<td style="text-align:right;">
+2136
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+115
+</td>
+<td style="text-align:left;">
+El Salvador
+</td>
+<td style="text-align:right;">
+201785
+</td>
+<td style="text-align:left;">
+Senegal
+</td>
+<td style="text-align:right;">
+1971
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+116
+</td>
+<td style="text-align:left;">
+Trinidad and Tobago
+</td>
+<td style="text-align:right;">
+189918
+</td>
+<td style="text-align:left;">
+Cameroon
+</td>
+<td style="text-align:right;">
+1965
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+117
+</td>
+<td style="text-align:left;">
+Maldives
+</td>
+<td style="text-align:right;">
+185738
+</td>
+<td style="text-align:left;">
+Angola
+</td>
+<td style="text-align:right;">
+1933
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+118
+</td>
+<td style="text-align:left;">
+Ghana
+</td>
+<td style="text-align:right;">
+171229
+</td>
+<td style="text-align:left;">
+Singapore
+</td>
+<td style="text-align:right;">
+1722
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+119
+</td>
+<td style="text-align:left;">
+Namibia
+</td>
+<td style="text-align:right;">
+171156
+</td>
+<td style="text-align:left;">
+Uzbekistan
+</td>
+<td style="text-align:right;">
+1637
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+120
+</td>
+<td style="text-align:left;">
+Uganda
+</td>
+<td style="text-align:right;">
+170544
+</td>
+<td style="text-align:left;">
+Bahrain
+</td>
+<td style="text-align:right;">
+1553
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+121
+</td>
+<td style="text-align:left;">
+Jamaica
+</td>
+<td style="text-align:right;">
+154416
+</td>
+<td style="text-align:left;">
+Rwanda
+</td>
+<td style="text-align:right;">
+1468
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+122
+</td>
+<td style="text-align:left;">
+Cambodia
+</td>
+<td style="text-align:right;">
+138719
+</td>
+<td style="text-align:left;">
+Congo (Kinshasa)
+</td>
+<td style="text-align:right;">
+1464
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+123
+</td>
+<td style="text-align:left;">
+Rwanda
+</td>
+<td style="text-align:right;">
+133194
+</td>
+<td style="text-align:left;">
+Ghana
+</td>
+<td style="text-align:right;">
+1462
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+124
+</td>
+<td style="text-align:left;">
+Cameroon
+</td>
+<td style="text-align:right;">
+124392
+</td>
+<td style="text-align:left;">
+Eswatini
+</td>
+<td style="text-align:right;">
+1425
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+125
+</td>
+<td style="text-align:left;">
+Malta
+</td>
+<td style="text-align:right;">
+117610
+</td>
+<td style="text-align:left;">
+Madagascar
+</td>
+<td style="text-align:right;">
+1423
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+126
+</td>
+<td style="text-align:left;">
+Barbados
+</td>
+<td style="text-align:right;">
+106798
+</td>
+<td style="text-align:left;">
+Suriname
+</td>
+<td style="text-align:right;">
+1404
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+127
+</td>
+<td style="text-align:left;">
+Angola
+</td>
+<td style="text-align:right;">
+105288
+</td>
+<td style="text-align:left;">
+Somalia
+</td>
+<td style="text-align:right;">
+1361
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+128
+</td>
+<td style="text-align:left;">
+Congo (Kinshasa)
+</td>
+<td style="text-align:right;">
+95749
+</td>
+<td style="text-align:left;">
+Cyprus
+</td>
+<td style="text-align:right;">
+1330
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+129
+</td>
+<td style="text-align:left;">
+Senegal
+</td>
+<td style="text-align:right;">
+88926
+</td>
+<td style="text-align:left;">
+Guyana
+</td>
+<td style="text-align:right;">
+1298
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+130
+</td>
+<td style="text-align:left;">
+Malawi
+</td>
+<td style="text-align:right;">
+88707
+</td>
+<td style="text-align:left;">
+Luxembourg
+</td>
+<td style="text-align:right;">
+1220
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+131
+</td>
+<td style="text-align:left;">
+Cote d’Ivoire
+</td>
+<td style="text-align:right;">
+88263
+</td>
+<td style="text-align:left;">
+Mauritius
+</td>
+<td style="text-align:right;">
+1044
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+132
+</td>
+<td style="text-align:left;">
+Suriname
+</td>
+<td style="text-align:right;">
+82467
+</td>
+<td style="text-align:left;">
+Mauritania
+</td>
+<td style="text-align:right;">
+997
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+133
+</td>
+<td style="text-align:left;">
+Eswatini
+</td>
+<td style="text-align:right;">
+74267
+</td>
+<td style="text-align:left;">
+Fiji
+</td>
+<td style="text-align:right;">
+883
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+134
+</td>
+<td style="text-align:left;">
+Guyana
+</td>
+<td style="text-align:right;">
+73075
+</td>
+<td style="text-align:left;">
+Haiti
+</td>
+<td style="text-align:right;">
+860
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+135
+</td>
+<td style="text-align:left;">
+Belize
+</td>
+<td style="text-align:right;">
+70757
+</td>
+<td style="text-align:left;">
+Tanzania
+</td>
+<td style="text-align:right;">
+846
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+136
+</td>
+<td style="text-align:left;">
+Fiji
+</td>
+<td style="text-align:right;">
+68898
+</td>
+<td style="text-align:left;">
+Cote d’Ivoire
+</td>
+<td style="text-align:right;">
+834
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+137
+</td>
+<td style="text-align:left;">
+Madagascar
+</td>
+<td style="text-align:right;">
+67889
+</td>
+<td style="text-align:left;">
+Bahamas
+</td>
+<td style="text-align:right;">
+833
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+138
+</td>
+<td style="text-align:left;">
+Sudan
+</td>
+<td style="text-align:right;">
+63829
+</td>
+<td style="text-align:left;">
+Malta
+</td>
+<td style="text-align:right;">
+828
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+139
+</td>
+<td style="text-align:left;">
+Mauritania
+</td>
+<td style="text-align:right;">
+63668
+</td>
+<td style="text-align:left;">
+Laos
+</td>
+<td style="text-align:right;">
+758
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+140
+</td>
+<td style="text-align:left;">
+Cabo Verde
+</td>
+<td style="text-align:right;">
+63244
+</td>
+<td style="text-align:left;">
+Mali
+</td>
+<td style="text-align:right;">
+743
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+141
+</td>
+<td style="text-align:left;">
+Bhutan
+</td>
+<td style="text-align:right;">
+62627
+</td>
+<td style="text-align:left;">
+Lesotho
+</td>
+<td style="text-align:right;">
+723
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+142
+</td>
+<td style="text-align:left;">
+Syria
+</td>
+<td style="text-align:right;">
+57467
+</td>
+<td style="text-align:left;">
+Belize
+</td>
+<td style="text-align:right;">
+688
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+143
+</td>
+<td style="text-align:left;">
+Burundi
+</td>
+<td style="text-align:right;">
+53631
+</td>
+<td style="text-align:left;">
+Qatar
+</td>
+<td style="text-align:right;">
+688
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+144
+</td>
+<td style="text-align:left;">
+Seychelles
+</td>
+<td style="text-align:right;">
+50665
+</td>
+<td style="text-align:left;">
+Papua New Guinea
+</td>
+<td style="text-align:right;">
+670
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+145
+</td>
+<td style="text-align:left;">
+Gabon
+</td>
+<td style="text-align:right;">
+48981
+</td>
+<td style="text-align:left;">
+Barbados
+</td>
+<td style="text-align:right;">
+579
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+146
+</td>
+<td style="text-align:left;">
+Andorra
+</td>
+<td style="text-align:right;">
+47890
+</td>
+<td style="text-align:left;">
+Guinea
+</td>
+<td style="text-align:right;">
+467
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+147
+</td>
+<td style="text-align:left;">
+Papua New Guinea
+</td>
+<td style="text-align:right;">
+46825
+</td>
+<td style="text-align:left;">
+Cabo Verde
+</td>
+<td style="text-align:right;">
+413
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+148
+</td>
+<td style="text-align:left;">
+Tanzania
+</td>
+<td style="text-align:right;">
+42906
+</td>
+<td style="text-align:left;">
+Saint Lucia
+</td>
+<td style="text-align:right;">
+409
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+149
+</td>
+<td style="text-align:left;">
+Togo
+</td>
+<td style="text-align:right;">
+39396
+</td>
+<td style="text-align:left;">
+Burkina Faso
+</td>
+<td style="text-align:right;">
+396
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+150
+</td>
+<td style="text-align:left;">
+Guinea
+</td>
+<td style="text-align:right;">
+38267
+</td>
+<td style="text-align:left;">
+Congo (Brazzaville)
+</td>
+<td style="text-align:right;">
+388
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+151
+</td>
+<td style="text-align:left;">
+Bahamas
+</td>
+<td style="text-align:right;">
+37491
+</td>
+<td style="text-align:left;">
+Gambia
+</td>
+<td style="text-align:right;">
+372
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+152
+</td>
+<td style="text-align:left;">
+Lesotho
+</td>
+<td style="text-align:right;">
+34790
+</td>
+<td style="text-align:left;">
+Niger
+</td>
+<td style="text-align:right;">
+315
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+153
+</td>
+<td style="text-align:left;">
+Haiti
+</td>
+<td style="text-align:right;">
+34202
+</td>
+<td style="text-align:left;">
+Maldives
+</td>
+<td style="text-align:right;">
+311
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+154
+</td>
+<td style="text-align:left;">
+Mali
+</td>
+<td style="text-align:right;">
+33062
+</td>
+<td style="text-align:left;">
+Gabon
+</td>
+<td style="text-align:right;">
+306
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+155
+</td>
+<td style="text-align:left;">
+Saint Lucia
+</td>
+<td style="text-align:right;">
+30004
+</td>
+<td style="text-align:left;">
+Liberia
+</td>
+<td style="text-align:right;">
+295
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+156
+</td>
+<td style="text-align:left;">
+Benin
+</td>
+<td style="text-align:right;">
+27999
+</td>
+<td style="text-align:left;">
+Togo
+</td>
+<td style="text-align:right;">
+290
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+157
+</td>
+<td style="text-align:left;">
+Somalia
+</td>
+<td style="text-align:right;">
+27324
+</td>
+<td style="text-align:left;">
+Iceland
+</td>
+<td style="text-align:right;">
+263
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+158
+</td>
+<td style="text-align:left;">
+Congo (Brazzaville)
+</td>
+<td style="text-align:right;">
+25087
+</td>
+<td style="text-align:left;">
+Nicaragua
+</td>
+<td style="text-align:right;">
+245
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+159
+</td>
+<td style="text-align:left;">
+Solomon Islands
+</td>
+<td style="text-align:right;">
+24575
+</td>
+<td style="text-align:left;">
+Grenada
+</td>
+<td style="text-align:right;">
+238
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+160
+</td>
+<td style="text-align:left;">
+Micronesia
+</td>
+<td style="text-align:right;">
+23948
+</td>
+<td style="text-align:left;">
+Brunei
+</td>
+<td style="text-align:right;">
+225
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+161
+</td>
+<td style="text-align:left;">
+San Marino
+</td>
+<td style="text-align:right;">
+23616
+</td>
+<td style="text-align:left;">
+Chad
+</td>
+<td style="text-align:right;">
+194
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+162
+</td>
+<td style="text-align:left;">
+Timor-Leste
+</td>
+<td style="text-align:right;">
+23419
+</td>
+<td style="text-align:left;">
+Djibouti
+</td>
+<td style="text-align:right;">
+189
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+163
+</td>
+<td style="text-align:left;">
+Burkina Faso
+</td>
+<td style="text-align:right;">
+22056
+</td>
+<td style="text-align:left;">
+Equatorial Guinea
+</td>
+<td style="text-align:right;">
+183
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+164
+</td>
+<td style="text-align:left;">
+Liechtenstein
+</td>
+<td style="text-align:right;">
+21432
+</td>
+<td style="text-align:left;">
+Guinea-Bissau
+</td>
+<td style="text-align:right;">
+176
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+165
+</td>
+<td style="text-align:left;">
+Grenada
+</td>
+<td style="text-align:right;">
+19680
+</td>
+<td style="text-align:left;">
+Seychelles
+</td>
+<td style="text-align:right;">
+172
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+166
+</td>
+<td style="text-align:left;">
+South Sudan
+</td>
+<td style="text-align:right;">
+18368
+</td>
+<td style="text-align:left;">
+Andorra
+</td>
+<td style="text-align:right;">
+165
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+167
+</td>
+<td style="text-align:left;">
+Tajikistan
+</td>
+<td style="text-align:right;">
+17786
+</td>
+<td style="text-align:left;">
+Benin
+</td>
+<td style="text-align:right;">
+163
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+168
+</td>
+<td style="text-align:left;">
+Equatorial Guinea
+</td>
+<td style="text-align:right;">
+17229
+</td>
+<td style="text-align:left;">
+Comoros
+</td>
+<td style="text-align:right;">
+161
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+169
+</td>
+<td style="text-align:left;">
+Tonga
+</td>
+<td style="text-align:right;">
+16810
+</td>
+<td style="text-align:left;">
+Solomon Islands
+</td>
+<td style="text-align:right;">
+153
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+170
+</td>
+<td style="text-align:left;">
+Samoa
+</td>
+<td style="text-align:right;">
+16607
+</td>
+<td style="text-align:left;">
+Antigua and Barbuda
+</td>
+<td style="text-align:right;">
+146
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+171
+</td>
+<td style="text-align:left;">
+Monaco
+</td>
+<td style="text-align:right;">
+16121
+</td>
+<td style="text-align:left;">
+South Sudan
+</td>
+<td style="text-align:right;">
+138
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+172
+</td>
+<td style="text-align:left;">
+Dominica
+</td>
+<td style="text-align:right;">
+15760
+</td>
+<td style="text-align:left;">
+Timor-Leste
+</td>
+<td style="text-align:right;">
+138
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+173
+</td>
+<td style="text-align:left;">
+Djibouti
+</td>
+<td style="text-align:right;">
+15690
+</td>
+<td style="text-align:left;">
+Sierra Leone
+</td>
+<td style="text-align:right;">
+126
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+174
+</td>
+<td style="text-align:left;">
+Nicaragua
+</td>
+<td style="text-align:right;">
+15655
+</td>
+<td style="text-align:left;">
+Tajikistan
+</td>
+<td style="text-align:right;">
+125
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+175
+</td>
+<td style="text-align:left;">
+Marshall Islands
+</td>
+<td style="text-align:right;">
+15649
+</td>
+<td style="text-align:left;">
+Saint Vincent and the Grenadines
+</td>
+<td style="text-align:right;">
+123
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+176
+</td>
+<td style="text-align:left;">
+Central African Republic
+</td>
+<td style="text-align:right;">
+15368
+</td>
+<td style="text-align:left;">
+San Marino
+</td>
+<td style="text-align:right;">
+122
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+177
+</td>
+<td style="text-align:left;">
+Gambia
+</td>
+<td style="text-align:right;">
+12598
+</td>
+<td style="text-align:left;">
+Central African Republic
+</td>
+<td style="text-align:right;">
+113
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+178
+</td>
+<td style="text-align:left;">
+Vanuatu
+</td>
+<td style="text-align:right;">
+12014
+</td>
+<td style="text-align:left;">
+Eritrea
+</td>
+<td style="text-align:right;">
+103
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+179
+</td>
+<td style="text-align:left;">
+Yemen
+</td>
+<td style="text-align:right;">
+11945
+</td>
+<td style="text-align:left;">
+Liechtenstein
+</td>
+<td style="text-align:right;">
+89
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+180
+</td>
+<td style="text-align:left;">
+Eritrea
+</td>
+<td style="text-align:right;">
+10189
+</td>
+<td style="text-align:left;">
+Sao Tome and Principe
+</td>
+<td style="text-align:right;">
+77
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+181
+</td>
+<td style="text-align:left;">
+Saint Vincent and the Grenadines
+</td>
+<td style="text-align:right;">
+9589
+</td>
+<td style="text-align:left;">
+Dominica
+</td>
+<td style="text-align:right;">
+74
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+182
+</td>
+<td style="text-align:left;">
+Niger
+</td>
+<td style="text-align:right;">
+9508
+</td>
+<td style="text-align:left;">
+Monaco
+</td>
+<td style="text-align:right;">
+67
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+183
+</td>
+<td style="text-align:left;">
+Antigua and Barbuda
+</td>
+<td style="text-align:right;">
+9106
+</td>
+<td style="text-align:left;">
+Micronesia
+</td>
+<td style="text-align:right;">
+61
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+184
+</td>
+<td style="text-align:left;">
+Comoros
+</td>
+<td style="text-align:right;">
+9008
+</td>
+<td style="text-align:left;">
+Saint Kitts and Nevis
+</td>
+<td style="text-align:right;">
+47
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+185
+</td>
+<td style="text-align:left;">
+Guinea-Bissau
+</td>
+<td style="text-align:right;">
+8960
+</td>
+<td style="text-align:left;">
+Burundi
+</td>
+<td style="text-align:right;">
+38
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+186
+</td>
+<td style="text-align:left;">
+Liberia
+</td>
+<td style="text-align:right;">
+8090
+</td>
+<td style="text-align:left;">
+Samoa
+</td>
+<td style="text-align:right;">
+29
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+187
+</td>
+<td style="text-align:left;">
+Sierra Leone
+</td>
+<td style="text-align:right;">
+7760
+</td>
+<td style="text-align:left;">
+Bhutan
+</td>
+<td style="text-align:right;">
+21
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+188
+</td>
+<td style="text-align:left;">
+Chad
+</td>
+<td style="text-align:right;">
+7679
+</td>
+<td style="text-align:left;">
+Kiribati
+</td>
+<td style="text-align:right;">
+18
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+189
+</td>
+<td style="text-align:left;">
+Saint Kitts and Nevis
+</td>
+<td style="text-align:right;">
+6597
+</td>
+<td style="text-align:left;">
+Marshall Islands
+</td>
+<td style="text-align:right;">
+17
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+190
+</td>
+<td style="text-align:left;">
+Sao Tome and Principe
+</td>
+<td style="text-align:right;">
+6281
+</td>
+<td style="text-align:left;">
+Vanuatu
+</td>
+<td style="text-align:right;">
+14
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+191
+</td>
+<td style="text-align:left;">
+Palau
+</td>
+<td style="text-align:right;">
+5991
+</td>
+<td style="text-align:left;">
+Diamond Princess
+</td>
+<td style="text-align:right;">
+13
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+192
+</td>
+<td style="text-align:left;">
+Nauru
+</td>
+<td style="text-align:right;">
+5247
+</td>
+<td style="text-align:left;">
+Tonga
+</td>
+<td style="text-align:right;">
+13
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+193
+</td>
+<td style="text-align:left;">
+Kiribati
+</td>
+<td style="text-align:right;">
+5014
+</td>
+<td style="text-align:left;">
+Palau
+</td>
+<td style="text-align:right;">
+9
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+194
+</td>
+<td style="text-align:left;">
+Tuvalu
+</td>
+<td style="text-align:right;">
+2805
+</td>
+<td style="text-align:left;">
+Korea, North
+</td>
+<td style="text-align:right;">
+6
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+195
+</td>
+<td style="text-align:left;">
+Summer Olympics 2020
+</td>
+<td style="text-align:right;">
+865
+</td>
+<td style="text-align:left;">
+MS Zaandam
+</td>
+<td style="text-align:right;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+196
+</td>
+<td style="text-align:left;">
+Diamond Princess
+</td>
+<td style="text-align:right;">
+712
+</td>
+<td style="text-align:left;">
+Nauru
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+197
+</td>
+<td style="text-align:left;">
+Winter Olympics 2022
+</td>
+<td style="text-align:right;">
+535
+</td>
+<td style="text-align:left;">
+Antarctica
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+198
+</td>
+<td style="text-align:left;">
+Holy See
+</td>
+<td style="text-align:right;">
+29
+</td>
+<td style="text-align:left;">
+Holy See
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+199
+</td>
+<td style="text-align:left;">
+Antarctica
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:left;">
+Summer Olympics 2020
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+200
+</td>
+<td style="text-align:left;">
+MS Zaandam
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+Tuvalu
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+201
+</td>
+<td style="text-align:left;">
+Korea, North
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+Winter Olympics 2022
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="objective-3---zooming-into-our-state" class="section level1">
+<h1>Objective 3 - Zooming Into Our State</h1>
+<p>Data Wrangling</p>
+<pre class="r"><code># Filter the table to California
+ca &lt;- confirmed_us %&gt;%
+  filter(Province_State == &quot;California&quot;)
+
+#change column name of last cumulative column to &quot;Confirmed_Cases&quot;
+colnames(ca)[ncol(ca)] = &quot;Confirmed_Cases&quot;
+
+# Reshape the data from wide to long format
+df_long1 &lt;- pivot_longer(ca, cols = starts_with(&quot;X&quot;), names_to = &quot;Date&quot;, values_to = &quot;Confirmed&quot;)
+
+# Format date data
+df_long1$Date &lt;- as.Date(sub(&quot;^X&quot;, &quot;&quot;, df_long1$Date), format = &quot;%m.%d.%y&quot;)
+
+# Data frame for CA trajectory of confirmations
+aggregated_ca &lt;- df_long1 %&gt;%
+  group_by(Date) %&gt;%
+  summarize(Confirmed = sum(Confirmed))
+
+# Data frame for top three city trajectories
+top_ca &lt;- ca %&gt;%
+  arrange(desc(Confirmed_Cases)) %&gt;%
+  head(3)
+
+#change column name of last cumulative column to date
+colnames(top_ca)[ncol(top_ca)] = &quot;X3.9.23&quot;
+
+# Reshape the data from wide to long format
+df_long2 &lt;- pivot_longer(top_ca, cols = starts_with(&quot;X&quot;), names_to = &quot;Date&quot;, values_to = &quot;Confirmed&quot;)
+
+# Format date data
+df_long2$Date &lt;- as.Date(sub(&quot;^X&quot;, &quot;&quot;, df_long2$Date), format = &quot;%m.%d.%y&quot;)</code></pre>
+<p>Creating Plots</p>
+<pre class="r"><code># Create the scatter plot showing CA&#39;s trajectory for confirmations
+ggplot(aggregated_ca, aes(x = Date, y = Confirmed)) +
+  geom_point(size = 3) +
+  labs(title = &quot;COVID-19 Confirmations in California&quot;,
+       x = &quot;Date&quot;,
+       y = &quot;Confirmed Cases&quot;)+
+  geom_vline(xintercept = as.numeric(as.Date(&quot;2021-01-29&quot;)), linetype = &quot;dashed&quot;, color = &quot;green&quot;) +
+  geom_vline(xintercept = as.numeric(as.Date(&quot;2021-05-11&quot;)), linetype = &quot;dashed&quot;, color = &quot;red&quot;) +
+  geom_vline(xintercept = as.numeric(as.Date(&quot;2021-11-26&quot;)), linetype = &quot;dashed&quot;, color = &quot;red&quot;)</code></pre>
+<p><img src="data:image/png;base64,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" width="672" /></p>
+<pre class="r"><code># Create the scatter plot showing CA&#39;s top 3 city trajectory for confirmations
+ggplot(df_long2, aes(x = Date, y = Confirmed, color = Admin2, group = Admin2)) +
+  geom_point(size = 3) +
+  labs(title = &quot;Top 3 CA City&#39;s COVID-19 Confirmations&quot;,
+       x = &quot;Date&quot;,
+       y = &quot;Confirmed Cases&quot;,
+      color = &quot;City&quot;) +
+  geom_vline(xintercept = as.numeric(as.Date(&quot;2021-01-29&quot;)), linetype = &quot;dashed&quot;, color = &quot;green&quot;) +
+  geom_vline(xintercept = as.numeric(as.Date(&quot;2021-05-11&quot;)), linetype = &quot;dashed&quot;, color = &quot;red&quot;) +
+  geom_vline(xintercept = as.numeric(as.Date(&quot;2021-11-26&quot;)), linetype = &quot;dashed&quot;, color = &quot;red&quot;)</code></pre>
+<p><img src="data:image/png;base64,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" width="672" /></p>
+</div>
+<div id="objective-4---digging-deeper" class="section level1">
+<h1>Objective 4 - Digging Deeper</h1>
+<p>Data Wrangling</p>
+<pre class="r"><code>#Change column names to be more readable
 colnames(deaths_us)[6] = &quot;City&quot;
 colnames(deaths_us)[ncol(deaths_us)] = &quot;Deaths&quot;
 colnames(confirmed_us)[6] = &quot;City&quot;
@@ -5355,22 +9130,18 @@ us_stats &lt;- merge(x=usdeaths, y=usconfirmed, by=&quot;UID&quot;) %&gt;% selec
 <pre class="r"><code>library(ggplot2)
 library(cowplot)</code></pre>
 <pre><code>## Warning: package &#39;cowplot&#39; was built under R version 4.2.3</code></pre>
-<pre class="r"><code>library(scales)</code></pre>
-<pre><code>## Warning: package &#39;scales&#39; was built under R version 4.2.3</code></pre>
-<pre><code>## 
-## Attaching package: &#39;scales&#39;</code></pre>
-<pre><code>## The following object is masked from &#39;package:readr&#39;:
-## 
-##     col_factor</code></pre>
-<pre class="r"><code>confpop &lt;- ggplot(us_stats, aes(x=Population, y=Confirmed)) +
+<pre class="r"><code>library(scales)
+#create plots for use with plot_grid
+#confirmed vs population plot
+confpop &lt;- ggplot(us_stats, aes(x=Population, y=Confirmed)) +
   geom_point()
 confpop &lt;- confpop + scale_x_continuous(labels=label_comma(), trans = &#39;log10&#39;) + scale_y_continuous(labels=label_comma(), trans = &#39;log10&#39;)
-
+#deaths vs confirmed plot
 deathconf &lt;- ggplot(us_stats, aes(x=Confirmed, y=Deaths)) +
   geom_point()
 deathconf &lt;- deathconf + scale_x_continuous(labels=label_comma(), trans = &#39;log10&#39;) + scale_y_continuous(labels=label_comma(), trans = &#39;log10&#39;)
 
-
+#joining the plots into one graphic
 plot_grid(confpop, deathconf, labels = c(&quot;Confirmations Vs. Population&quot;,&quot;Deaths Vs. Confirmations&quot;), align=&quot;h&quot;, hjust=-.3, vjust=.9)</code></pre>
 <pre><code>## Warning: Transformation introduced infinite values in continuous x-axis</code></pre>
 <pre><code>## Warning: Transformation introduced infinite values in continuous y-axis</code></pre>

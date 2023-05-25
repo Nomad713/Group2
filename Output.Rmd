@@ -1,16 +1,21 @@
 ---
 title: "Group Project 2"
-author: "Ian"
+author: "Ian and Queen"
 date: "`r Sys.Date()`"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ```{r}
 library(readr)
+library(ggplot2)
+library(scales)
+library(dplyr)
+library(tidyr)
+library(readr)
+library(leaflet)
+library(knitr)
+library(kableExtra)
+
 #read in data
 confirmed_global <- read.csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv")
 
@@ -20,11 +25,9 @@ deaths_global <- read.csv("https://raw.githubusercontent.com/CSSEGISandData/COVI
 
 deaths_us <- read.csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv")
 ```
-Objective 1 - Global Map
+# Objective 1 - Global Map
 Data Wrangling
 ```{r}
-library(dplyr)
-
 #change column name of last cumulative column to "Confirmed_Cases"
 colnames(confirmed_global)[ncol(confirmed_global)] = "Confirmed_Cases"
 #group table by country and calculate average lat and long for countries and sum of confirmed cases
@@ -49,7 +52,6 @@ global_stats <- merge(x=grouped_confirmed, y=grouped_deaths, by="Country.Region"
 ```
 Map Making
 ```{r}
-library("leaflet")
 global_stats$`sum(Confirmed_Cases)` = as.factor(global_stats$`sum(Confirmed_Cases)`)
 #create pallette for map
 pal <- colorFactor("RdYlGn", global_stats$`sum(Confirmed_Cases)`, reverse = TRUE)
@@ -69,14 +71,93 @@ leaflet(data = global_stats) %>%
     color = ~pal(global_stats$`sum(Confirmed_Cases)`),
     fillOpacity = .5)
 ```
-
-
-
-
-## Objective 4 - Digging Deeper
-data wrangling
+# Objective 2 - Narrowing Down Hot Spots  
 ```{r}
-library(dplyr)
+# Order and rank Covid-19 confirmed cases and deaths
+confirmed_rank <- grouped_confirmed %>%
+  select(1,4)%>%
+  arrange(desc(.[, 2])) %>%
+  mutate(rank = row_number()) %>%
+  select(rank, everything())
+
+death_rank <- grouped_deaths %>%
+  select(1,4)%>%
+  arrange(desc(.[, 2])) %>%
+  mutate(rank = row_number()) %>%
+  select(rank, everything())
+
+
+# Merge the data frames based on rank
+grouped_rank <-merge(confirmed_rank, death_rank, by = "rank") 
+
+# Print the tables of confirmed cases using kable
+kable(grouped_rank, col.names = c("Rank", "Country", "Confirmed Cases Count", "Country", "Death Count"), caption = "Top Countries") %>%
+  kable_styling(fixed_thead = T) %>%
+  kable_paper() %>%
+  scroll_box(width = "100%", height = "500px")
+```
+# Objective 3 -  Zooming Into Our State 
+Data Wrangling
+```{r}
+# Filter the table to California
+ca <- confirmed_us %>%
+  filter(Province_State == "California")
+
+#change column name of last cumulative column to "Confirmed_Cases"
+colnames(ca)[ncol(ca)] = "Confirmed_Cases"
+
+# Reshape the data from wide to long format
+df_long1 <- pivot_longer(ca, cols = starts_with("X"), names_to = "Date", values_to = "Confirmed")
+
+# Format date data
+df_long1$Date <- as.Date(sub("^X", "", df_long1$Date), format = "%m.%d.%y")
+
+# Data frame for CA trajectory of confirmations
+aggregated_ca <- df_long1 %>%
+  group_by(Date) %>%
+  summarize(Confirmed = sum(Confirmed))
+
+# Data frame for top three city trajectories
+top_ca <- ca %>%
+  arrange(desc(Confirmed_Cases)) %>%
+  head(3)
+
+#change column name of last cumulative column to date
+colnames(top_ca)[ncol(top_ca)] = "X3.9.23"
+
+# Reshape the data from wide to long format
+df_long2 <- pivot_longer(top_ca, cols = starts_with("X"), names_to = "Date", values_to = "Confirmed")
+
+# Format date data
+df_long2$Date <- as.Date(sub("^X", "", df_long2$Date), format = "%m.%d.%y")
+```
+Creating Plots
+```{r}
+# Create the scatter plot showing CA's trajectory for confirmations
+ggplot(aggregated_ca, aes(x = Date, y = Confirmed)) +
+  geom_point(size = 3) +
+  labs(title = "COVID-19 Confirmations in California",
+       x = "Date",
+       y = "Confirmed Cases")+
+  geom_vline(xintercept = as.numeric(as.Date("2021-01-29")), linetype = "dashed", color = "green") +
+  geom_vline(xintercept = as.numeric(as.Date("2021-05-11")), linetype = "dashed", color = "red") +
+  geom_vline(xintercept = as.numeric(as.Date("2021-11-26")), linetype = "dashed", color = "red")
+
+# Create the scatter plot showing CA's top 3 city trajectory for confirmations
+ggplot(df_long2, aes(x = Date, y = Confirmed, color = Admin2, group = Admin2)) +
+  geom_point(size = 3) +
+  labs(title = "Top 3 CA City's COVID-19 Confirmations",
+       x = "Date",
+       y = "Confirmed Cases",
+      color = "City") +
+  geom_vline(xintercept = as.numeric(as.Date("2021-01-29")), linetype = "dashed", color = "green") +
+  geom_vline(xintercept = as.numeric(as.Date("2021-05-11")), linetype = "dashed", color = "red") +
+  geom_vline(xintercept = as.numeric(as.Date("2021-11-26")), linetype = "dashed", color = "red")
+```
+
+# Objective 4 - Digging Deeper
+Data Wrangling
+```{r}
 #Change column names to be more readable
 colnames(deaths_us)[6] = "City"
 colnames(deaths_us)[ncol(deaths_us)] = "Deaths"
